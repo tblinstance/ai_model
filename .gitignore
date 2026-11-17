@@ -12,6 +12,7 @@ build/
 staticfiles/
 src/ai_engine/media/
 src/ai_engine/checkpoints/
+src/ai_engine/training/video/video_motion_50m.txt
 src/base/.run/
 src/base/.logs/
 src/base/.pgdata/
