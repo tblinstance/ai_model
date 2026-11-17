@@ -25,3 +25,9 @@ src/base/postgraphql/node_modules/
 # Environment overrides
 *.env.local
 
+# SSH keys & local credentials
+.ssh/
+id_*
+*.pem
+*.key
+

@@ -3,7 +3,7 @@ name = "ai-model"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "tblinc810",email = "tblinc810@github.com"}
+    {name = "tblinstance",email = "tblinstance@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.14"
