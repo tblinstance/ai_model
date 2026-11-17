@@ -19,6 +19,8 @@ src/base/.pgdata/
 # Frontend / Node
 src/frontend/node_modules/
 src/frontend/dist/
+src/frontend/.vite/
+.vite/
 src/base/postgraphql/node_modules/
 *.tsbuildinfo
 
