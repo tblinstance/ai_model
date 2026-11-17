@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "cyberpunk neon skyline webp high detail",
+    "response": "Visual preset: plasma Matplotlib perceptual LUT + Pillow Contrast/Sharpness enhancement exported cleanly in WebP/PNG.",
+    "intent": "image_generation",
+    "task": "images"
+  },
+  {
+    "prompt": "emerald alpine forest mist emerald botanical art",
+    "response": "Visual preset: YlGn natural canopy colormap blended over neural spatial fields at tier resolution.",
+    "intent": "image_generation",
+    "task": "images"
+  },
+  {
+    "prompt": "arctic glacier frost crystal aurora illustration",
+    "response": "Visual preset: PuBu glacial gradient LUT + smooth Gaussian highlight blending via Pillow.",
+    "intent": "image_generation",
+    "task": "images"
+  },
+  {
+    "prompt": "sunset lava ember abstract molten waves",
+    "response": "Visual preset: inferno thermal colormap with elevated luminance bloom exported via Pillow.",
+    "intent": "image_generation",
+    "task": "images"
+  }
+]

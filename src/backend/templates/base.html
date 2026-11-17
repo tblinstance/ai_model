@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}tblinc AI · Control Console{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'img/tblinc-ai-icon.svg' %}?v=2026111207" />
+  <link rel="shortcut icon" type="image/svg+xml" href="{% static 'img/tblinc-ai-icon.svg' %}?v=2026111207" />
+
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var isDark = saved ? saved === "dark" : true;
+      document.documentElement.classList.toggle("dark", isDark);
+      document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+    })();
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <!-- Motion & Lucide CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.umd.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}?v=2026111201" />
+  <link rel="stylesheet" href="{% static 'css/components.css' %}?v=2026111201" />
+  <style>[v-cloak] { display: none !important; }</style>
+</head>
+<body class="antialiased selection:bg-cyan-500/30 transition-colors duration-200">
+  {% block content %}{% endblock %}
+</body>
+</html>
+

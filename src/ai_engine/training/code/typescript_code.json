@@ -1,0 +1,86 @@
+[
+  {
+    "prompt": "write typescript react hook debounced search usestate useeffect",
+    "response": "import { useEffect, useState } from \"react\";\n\nexport function useDebouncedValue<T>(value: T, delayMs: number = 300): T {\n  const [debounced, setDebounced] = useState<T>(value);\n\n  useEffect(() => {\n    const timer = window.setTimeout(() => setDebounced(value), delayMs);\n    return () => window.clearTimeout(timer);\n  }, [value, delayMs]);\n\n  return debounced;\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "react debounce custom hook typescript frontend",
+    "response": "import { useEffect, useState } from \"react\";\n\nexport function useDebouncedValue<T>(value: T, delayMs: number = 300): T {\n  const [debounced, setDebounced] = useState<T>(value);\n\n  useEffect(() => {\n    const timer = window.setTimeout(() => setDebounced(value), delayMs);\n    return () => window.clearTimeout(timer);\n  }, [value, delayMs]);\n\n  return debounced;\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write typescript axios jwt interceptor api client",
+    "response": "import axios, { AxiosError, InternalAxiosRequestConfig } from \"axios\";\n\nexport const apiClient = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n  timeout: 90000,\n  headers: { \"Content-Type\": \"application/json\" },\n});\n\napiClient.interceptors.request.use((config: InternalAxiosRequestConfig) => {\n  const token = localStorage.getItem(\"access_token\");\n  if (token) {\n    config.headers.Authorization = `Bearer ${token}`;\n  }\n  return config;\n});\n\nexport function getApiError(err: unknown): string {\n  if (err instanceof AxiosError) {\n    if (err.code === \"ECONNABORTED\") return \"Request timed out.\";\n    const detail = (err.response?.data as { detail?: string } | undefined)?.detail;\n    return detail || err.message;\n  }\n  return err instanceof Error ? err.message : \"Unknown error\";\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "typescript http service bearer token timeout error extractor",
+    "response": "import axios, { AxiosError, InternalAxiosRequestConfig } from \"axios\";\n\nexport const apiClient = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n  timeout: 90000,\n  headers: { \"Content-Type\": \"application/json\" },\n});\n\napiClient.interceptors.request.use((config: InternalAxiosRequestConfig) => {\n  const token = localStorage.getItem(\"access_token\");\n  if (token) {\n    config.headers.Authorization = `Bearer ${token}`;\n  }\n  return config;\n});\n\nexport function getApiError(err: unknown): string {\n  if (err instanceof AxiosError) {\n    if (err.code === \"ECONNABORTED\") return \"Request timed out.\";\n    const detail = (err.response?.data as { detail?: string } | undefined)?.detail;\n    return detail || err.message;\n  }\n  return err instanceof Error ? err.message : \"Unknown error\";\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write react tsx video mp4 player poster download component",
+    "response": "interface VideoPreviewProps {\n  srcUrl: string;\n  posterUrl?: string;\n  title?: string;\n}\n\nexport function VideoPreview({ srcUrl, posterUrl, title = \"Generated MP4\" }: VideoPreviewProps) {\n  return (\n    <div className=\"space-y-2\">\n      <video\n        controls\n        playsInline\n        preload=\"metadata\"\n        poster={posterUrl}\n        src={srcUrl}\n        aria-label={title}\n        className=\"w-full max-w-lg rounded-xl border border-slate-700 bg-black\"\n      />\n      <a href={srcUrl} download=\"output.mp4\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"text-xs font-mono text-cyan-400\">\n        Download .mp4\n      </a>\n    </div>\n  );\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "typescript react component video controls download link",
+    "response": "interface VideoPreviewProps {\n  srcUrl: string;\n  posterUrl?: string;\n  title?: string;\n}\n\nexport function VideoPreview({ srcUrl, posterUrl, title = \"Generated MP4\" }: VideoPreviewProps) {\n  return (\n    <div className=\"space-y-2\">\n      <video\n        controls\n        playsInline\n        preload=\"metadata\"\n        poster={posterUrl}\n        src={srcUrl}\n        aria-label={title}\n        className=\"w-full max-w-lg rounded-xl border border-slate-700 bg-black\"\n      />\n      <a href={srcUrl} download=\"output.mp4\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"text-xs font-mono text-cyan-400\">\n        Download .mp4\n      </a>\n    </div>\n  );\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write vue reactive workspace store typescript state",
+    "response": "import { reactive } from \"vue\";\n\nexport const studioStore = reactive({\n  tier: \"flash\" as \"flash\" | \"pro\" | \"advance\",\n  task: \"chat\" as \"chat\" | \"images\" | \"video\" | \"code\",\n  durationSeconds: 600,\n  credits: 250,\n  formatUsd(amount: number): string {\n    return `$${(amount * 0.01).toFixed(2)}`;\n  },\n});\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "vue 3 reactive store actions tier credits",
+    "response": "import { reactive } from \"vue\";\n\nexport const studioStore = reactive({\n  tier: \"flash\" as \"flash\" | \"pro\" | \"advance\",\n  task: \"chat\" as \"chat\" | \"images\" | \"video\" | \"code\",\n  durationSeconds: 600,\n  credits: 250,\n  formatUsd(amount: number): string {\n    return `$${(amount * 0.01).toFixed(2)}`;\n  },\n});\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write typescript sse streaming fetch reader generator",
+    "response": "export async function readSseStream(\n  url: string,\n  body: Record<string, unknown>,\n  onChunk: (text: string) => void\n): Promise<void> {\n  const resp = await fetch(url, {\n    method: \"POST\",\n    headers: { \"Content-Type\": \"application/json\" },\n    body: JSON.stringify(body),\n  });\n  if (!resp.ok || !resp.body) throw new Error(`Stream failed: HTTP ${resp.status}`);\n  const reader = resp.body.getReader();\n  const decoder = new TextDecoder();\n  while (true) {\n    const { done, value } = await reader.read();\n    if (done) break;\n    onChunk(decoder.decode(value, { stream: true }));\n  }\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "read server sent events stream fetch abortcontroller typescript",
+    "response": "export async function readSseStream(\n  url: string,\n  body: Record<string, unknown>,\n  onChunk: (text: string) => void\n): Promise<void> {\n  const resp = await fetch(url, {\n    method: \"POST\",\n    headers: { \"Content-Type\": \"application/json\" },\n    body: JSON.stringify(body),\n  });\n  if (!resp.ok || !resp.body) throw new Error(`Stream failed: HTTP ${resp.status}`);\n  const reader = resp.body.getReader();\n  const decoder = new TextDecoder();\n  while (true) {\n    const { done, value } = await reader.read();\n    if (done) break;\n    onChunk(decoder.decode(value, { stream: true }));\n  }\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write typescript react drag drop paste media file upload",
+    "response": "import React, { useState } from \"react\";\n\nexport function MediaDropZone({ onSelectFile }: { onSelectFile: (file: File) => void }) {\n  const [dragging, setDragging] = useState(false);\n\n  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {\n    e.preventDefault();\n    setDragging(false);\n    const file = e.dataTransfer.files?.[0];\n    if (file) onSelectFile(file);\n  };\n\n  return (\n    <div\n      onDragOver={(e) => { e.preventDefault(); setDragging(true); }}\n      onDragLeave={() => setDragging(false)}\n      onDrop={handleDrop}\n      className={dragging ? \"border-cyan-500 ring-2 ring-cyan-500/30 p-4 rounded-xl\" : \"border-slate-700 p-4 rounded-xl\"}\n    >\n      Drop image or MP4 video here\n    </div>\n  );\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "react file drop clipboard image video preview handler tsx",
+    "response": "import React, { useState } from \"react\";\n\nexport function MediaDropZone({ onSelectFile }: { onSelectFile: (file: File) => void }) {\n  const [dragging, setDragging] = useState(false);\n\n  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {\n    e.preventDefault();\n    setDragging(false);\n    const file = e.dataTransfer.files?.[0];\n    if (file) onSelectFile(file);\n  };\n\n  return (\n    <div\n      onDragOver={(e) => { e.preventDefault(); setDragging(true); }}\n      onDragLeave={() => setDragging(false)}\n      onDrop={handleDrop}\n      className={dragging ? \"border-cyan-500 ring-2 ring-cyan-500/30 p-4 rounded-xl\" : \"border-slate-700 p-4 rounded-xl\"}\n    >\n      Drop image or MP4 video here\n    </div>\n  );\n}\n",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write typescript react dark mode toggle hook with localStorage sync",
+    "response": "import { useEffect, useState } from 'react';\n\nexport function useThemeMode() {\n  const [dark, setDark] = useState(() => localStorage.getItem('theme') !== 'light');\n  useEffect(() => {\n    document.documentElement.classList.toggle('dark', dark);\n    localStorage.setItem('theme', dark ? 'dark' : 'light');\n  }, [dark]);\n  return { dark, toggle: () => setDark((d) => !d) };\n}",
+    "intent": "code_typescript",
+    "task": "code"
+  },
+  {
+    "prompt": "write typescript vue reactive BDT USD wallet formatter store",
+    "response": "import { reactive } from 'vue';\n\nexport const walletStore = reactive({\n  credits: 250,\n  usdPerCredit: 0.01,\n  bdtPerUsd: 120,\n  formattedUsd(): string {\n    return `$${(this.credits * this.usdPerCredit).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;\n  },\n  formattedBdt(): string {\n    return `৳${(this.credits * this.usdPerCredit * this.bdtPerUsd).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;\n  },\n});",
+    "intent": "code_typescript",
+    "task": "code"
+  }
+]

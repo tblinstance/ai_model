@@ -1,0 +1,14 @@
+{
+  "name": "ai-model-postgraphql",
+  "private": true,
+  "version": "0.1.0",
+  "description": "PostGraphile (PostGraphQL) GraphQL API server for AI-Model PostgreSQL database",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node server.cjs"
+  },
+  "dependencies": {
+    "postgraphile": "^4.14.1"
+  }
+}
+

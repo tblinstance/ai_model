@@ -1,0 +1,104 @@
+[
+  {
+    "prompt": "create 10 minute h264 mp4 vortex cosmos nebula video",
+    "response": "Motion preset: vortex rotational swirl (twilight_shifted LUT) across 15s neural attractor cycle looped seamlessly to 600s H.264 MP4.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render 12 minute tidal ocean ripple bioluminescent mp4 clip",
+    "response": "Motion preset: concentric radial ripple (viridis LUT) synthesized with FFmpeg libx264 yuv420p +faststart at 720s duration.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "animate 15 minute cyberpunk neon grid laser sweep mp4",
+    "response": "Motion preset: directional interference sweep (plasma LUT) extended seamlessly to 900s H.264 Main MP4.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "generate 20 minute solar flare inferno orbit ambient mp4",
+    "response": "Motion preset: smooth orbital wave harmonic (inferno LUT) encoded with FFmpeg faststart at 1200s duration.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "animate uploaded image or video frames into 10 minute mp4",
+    "response": "Reference conditioning: ping-pong video keyframe interpolation or sinusoidal horizontal shimmer blended with neural fields into >=600s H.264 MP4.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video 2D cel animation vibrant pop art comic sequence",
+    "response": "Motion preset: 2D cartoon cel animation with playful harmonic bounce and high-contrast comic color palette (tab10 LUT) synthesized into seamless 600s H.264 MP4.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create 10 minute cartoon animated video playful bouncing character motion vibrant cel-shaded mp4",
+    "response": "Motion preset: playful 2D cartoon bouncing harmonic wave with 5-level discrete cel-shading quantization and saturated tab10 animation colors.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render cartoon anime style video comic book pop art ink outlines 12 minute mp4",
+    "response": "Motion preset: anime cel animation motion with comic book pop-art style color transitions and dynamic keyframe interpolation encoded via FFmpeg libx264.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "generate 10 minute carton video bouncy character walk cycle colorful 2D cartoon animation",
+    "response": "Motion preset: carton video character locomotion with rhythmic squash-and-stretch harmonics and vibrant primary cel shading.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "generate 10 minute real woman speaking portrait video in studio",
+    "response": "Motion preset: photorealistic human portrait with physiological respiration harmonics, subtle cranial micro-sway, natural skin tones, and studio depth-of-field.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "animate virtual man digital avatar talking head 10 minute mp4",
+    "response": "Motion preset: virtual human avatar with realistic facial micro-expressions, conversational head movement, and natural lighting encoded via FFmpeg libx264.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render realistic virtual human woman character interview video 12 minute mp4",
+    "response": "Motion preset: real virtual woman character interview with anatomical cranial contours, soft subsurface scattering skin grading, and seamless 12-minute H.264 playback.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "animate uploaded photo of real man or woman into talking portrait mp4",
+    "response": "Reference conditioning: 94% photo fidelity preservation of facial landmarks, eyes, and skin texture with natural breathing and micro-pan animation.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "generate 10 minute funny donald trump comedy speech accordion hand gesture video",
+    "response": "Motion preset: Donald Trump comedic parody video featuring signature golden-blonde swept bouffant hair, navy suit with iconic long red tie, rhythmic accordion hand gestures, and expressive speech oratory articulation synthesized into >=600s H.264 MP4.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create funny donail tum meme comedy video hilarious dance and thumbs up mp4",
+    "response": "Motion preset: Donald Trump viral funny dance meme motion with comedic cranial head tilt, playful double thumbs-up gestures, and warm Oval Office studio illumination.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render 12 minute funny donald trump press conference comedy caricature video",
+    "response": "Motion preset: satirical Donald Trump press briefing caricature with exaggerated comedic lip pursing, humorous eyebrow raises, animated podium gestures, and high-fidelity photorealistic facial blendshapes.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "animate funny donald trump viral rally parody monologue 15 minute video",
+    "response": "Motion preset: Donald Trump comedic rally monologue with dynamic conversational head sway, dramatic comedic pauses, and natural speech-synced mouth articulation encoded seamlessly via FFmpeg libx264.",
+    "intent": "video_generation",
+    "task": "video"
+  }
+]

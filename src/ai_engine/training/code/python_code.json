@@ -1,0 +1,332 @@
+[
+  {
+    "prompt": "write django model foreignkey datetimefield ordering str",
+    "response": "from __future__ import annotations\n\nfrom django.conf import settings\nfrom django.db import models\n\n\nclass WorkspaceArticle(models.Model):\n    author = models.ForeignKey(\n        settings.AUTH_USER_MODEL,\n        on_delete=models.CASCADE,\n        related_name=\"articles\",\n    )\n    title = models.CharField(max_length=160)\n    body = models.TextField(blank=True, default=\"\")\n    is_published = models.BooleanField(default=True, db_index=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n\n    class Meta:\n        ordering = [\"-updated_at\", \"-id\"]\n\n    def __str__(self) -> str:\n        return f\"{self.title} ({self.author_id})\"\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "create django model article conversation message",
+    "response": "from __future__ import annotations\n\nfrom django.conf import settings\nfrom django.db import models\n\n\nclass WorkspaceArticle(models.Model):\n    author = models.ForeignKey(\n        settings.AUTH_USER_MODEL,\n        on_delete=models.CASCADE,\n        related_name=\"articles\",\n    )\n    title = models.CharField(max_length=160)\n    body = models.TextField(blank=True, default=\"\")\n    is_published = models.BooleanField(default=True, db_index=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n\n    class Meta:\n        ordering = [\"-updated_at\", \"-id\"]\n\n    def __str__(self) -> str:\n        return f\"{self.title} ({self.author_id})\"\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "django orm model schema production python code",
+    "response": "from __future__ import annotations\n\nfrom django.conf import settings\nfrom django.db import models\n\n\nclass WorkspaceArticle(models.Model):\n    author = models.ForeignKey(\n        settings.AUTH_USER_MODEL,\n        on_delete=models.CASCADE,\n        related_name=\"articles\",\n    )\n    title = models.CharField(max_length=160)\n    body = models.TextField(blank=True, default=\"\")\n    is_published = models.BooleanField(default=True, db_index=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n\n    class Meta:\n        ordering = [\"-updated_at\", \"-id\"]\n\n    def __str__(self) -> str:\n        return f\"{self.title} ({self.author_id})\"\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python django transaction select_for_update credit deduction",
+    "response": "from __future__ import annotations\n\nfrom django.db import transaction\n\n\ndef consume_credits_atomic(quota_model, user_id: int, amount: int) -> int:\n    if amount <= 0:\n        raise ValueError(\"Credit deduction must be positive.\")\n    with transaction.atomic():\n        quota = quota_model.objects.select_for_update().get(user_id=user_id)\n        if quota.balance_credits < amount:\n            raise ValueError(f\"Insufficient credits: {quota.balance_credits} < {amount}\")\n        quota.balance_credits -= amount\n        quota.save(update_fields=[\"balance_credits\", \"updated_at\"])\n        return quota.balance_credits\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "atomic row lock select_for_update django orm",
+    "response": "from __future__ import annotations\n\nfrom django.db import transaction\n\n\ndef consume_credits_atomic(quota_model, user_id: int, amount: int) -> int:\n    if amount <= 0:\n        raise ValueError(\"Credit deduction must be positive.\")\n    with transaction.atomic():\n        quota = quota_model.objects.select_for_update().get(user_id=user_id)\n        if quota.balance_credits < amount:\n            raise ValueError(f\"Insufficient credits: {quota.balance_credits} < {amount}\")\n        quota.balance_credits -= amount\n        quota.save(update_fields=[\"balance_credits\", \"updated_at\"])\n        return quota.balance_credits\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "safe wallet debit django transaction atomic",
+    "response": "from __future__ import annotations\n\nfrom django.db import transaction\n\n\ndef consume_credits_atomic(quota_model, user_id: int, amount: int) -> int:\n    if amount <= 0:\n        raise ValueError(\"Credit deduction must be positive.\")\n    with transaction.atomic():\n        quota = quota_model.objects.select_for_update().get(user_id=user_id)\n        if quota.balance_credits < amount:\n            raise ValueError(f\"Insufficient credits: {quota.balance_credits} < {amount}\")\n        quota.balance_credits -= amount\n        quota.save(update_fields=[\"balance_credits\", \"updated_at\"])\n        return quota.balance_credits\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write django rest framework serializer validation modelserializer",
+    "response": "from __future__ import annotations\n\nfrom rest_framework import serializers\n\n\nclass InferencePayloadSerializer(serializers.Serializer):\n    prompt = serializers.CharField(min_length=1, max_length=16000)\n    tier = serializers.ChoiceField(choices=[\"flash\", \"pro\", \"advance\"], default=\"flash\")\n    duration_seconds = serializers.IntegerField(min_value=1, max_value=3600, required=False, allow_null=True)\n\n    def validate_prompt(self, value: str) -> str:\n        cleaned = value.strip()\n        if not cleaned:\n            raise serializers.ValidationError(\"Prompt must contain non-whitespace characters.\")\n        return cleaned\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "drf nested serializer create validate python code",
+    "response": "from __future__ import annotations\n\nfrom rest_framework import serializers\n\n\nclass InferencePayloadSerializer(serializers.Serializer):\n    prompt = serializers.CharField(min_length=1, max_length=16000)\n    tier = serializers.ChoiceField(choices=[\"flash\", \"pro\", \"advance\"], default=\"flash\")\n    duration_seconds = serializers.IntegerField(min_value=1, max_value=3600, required=False, allow_null=True)\n\n    def validate_prompt(self, value: str) -> str:\n        cleaned = value.strip()\n        if not cleaned:\n            raise serializers.ValidationError(\"Prompt must contain non-whitespace characters.\")\n        return cleaned\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "django api input serializer clean whitespace",
+    "response": "from __future__ import annotations\n\nfrom rest_framework import serializers\n\n\nclass InferencePayloadSerializer(serializers.Serializer):\n    prompt = serializers.CharField(min_length=1, max_length=16000)\n    tier = serializers.ChoiceField(choices=[\"flash\", \"pro\", \"advance\"], default=\"flash\")\n    duration_seconds = serializers.IntegerField(min_value=1, max_value=3600, required=False, allow_null=True)\n\n    def validate_prompt(self, value: str) -> str:\n        cleaned = value.strip()\n        if not cleaned:\n            raise serializers.ValidationError(\"Prompt must contain non-whitespace characters.\")\n        return cleaned\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write django drf apiview isauthenticated protected endpoint",
+    "response": "from __future__ import annotations\n\nfrom rest_framework import permissions, status\nfrom rest_framework.request import Request\nfrom rest_framework.response import Response\nfrom rest_framework.views import APIView\n\n\nclass AccountStatusView(APIView):\n    permission_classes = [permissions.IsAuthenticated]\n\n    def get(self, request: Request) -> Response:\n        return Response(\n            {\n                \"username\": request.user.username,\n                \"is_staff\": bool(request.user.is_staff),\n                \"status\": \"authenticated\",\n            },\n            status=status.HTTP_200_OK,\n        )\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "django rest framework api view urls path",
+    "response": "from __future__ import annotations\n\nfrom rest_framework import permissions, status\nfrom rest_framework.request import Request\nfrom rest_framework.response import Response\nfrom rest_framework.views import APIView\n\n\nclass AccountStatusView(APIView):\n    permission_classes = [permissions.IsAuthenticated]\n\n    def get(self, request: Request) -> Response:\n        return Response(\n            {\n                \"username\": request.user.username,\n                \"is_staff\": bool(request.user.is_staff),\n                \"status\": \"authenticated\",\n            },\n            status=status.HTTP_200_OK,\n        )\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "drf view get post json response permissions",
+    "response": "from __future__ import annotations\n\nfrom rest_framework import permissions, status\nfrom rest_framework.request import Request\nfrom rest_framework.response import Response\nfrom rest_framework.views import APIView\n\n\nclass AccountStatusView(APIView):\n    permission_classes = [permissions.IsAuthenticated]\n\n    def get(self, request: Request) -> Response:\n        return Response(\n            {\n                \"username\": request.user.username,\n                \"is_staff\": bool(request.user.is_staff),\n                \"status\": \"authenticated\",\n            },\n            status=status.HTTP_200_OK,\n        )\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write django management command basecommand cli",
+    "response": "from __future__ import annotations\n\nfrom django.core.management.base import BaseCommand, CommandError\n\n\nclass Command(BaseCommand):\n    help = \"Run automated maintenance checks and report active records.\"\n\n    def add_arguments(self, parser) -> None:\n        parser.add_argument(\"--tier\", choices=[\"flash\", \"pro\", \"advance\"], default=\"flash\")\n        parser.add_argument(\"--dry-run\", action=\"store_true\")\n\n    def handle(self, *args, **options) -> None:\n        tier = options[\"tier\"]\n        if not tier:\n            raise CommandError(\"Tier is required.\")\n        mode = \"DRY-RUN\" if options[\"dry_run\"] else \"EXECUTE\"\n        self.stdout.write(self.style.SUCCESS(f\"[{mode}] Completed task for tier={tier}\"))\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "custom manage.py command arguments django python",
+    "response": "from __future__ import annotations\n\nfrom django.core.management.base import BaseCommand, CommandError\n\n\nclass Command(BaseCommand):\n    help = \"Run automated maintenance checks and report active records.\"\n\n    def add_arguments(self, parser) -> None:\n        parser.add_argument(\"--tier\", choices=[\"flash\", \"pro\", \"advance\"], default=\"flash\")\n        parser.add_argument(\"--dry-run\", action=\"store_true\")\n\n    def handle(self, *args, **options) -> None:\n        tier = options[\"tier\"]\n        if not tier:\n            raise CommandError(\"Tier is required.\")\n        mode = \"DRY-RUN\" if options[\"dry_run\"] else \"EXECUTE\"\n        self.stdout.write(self.style.SUCCESS(f\"[{mode}] Completed task for tier={tier}\"))\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write pytest django drf apiclient test jwt auth",
+    "response": "from __future__ import annotations\n\nfrom django.contrib.auth import get_user_model\nfrom rest_framework import status\nfrom rest_framework.test import APIClient\n\n\ndef test_authenticated_profile_endpoint(db) -> None:\n    user = get_user_model().objects.create_user(username=\"alice\", password=\"strong-password-123\")\n    client = APIClient()\n    client.force_authenticate(user=user)\n    resp = client.get(\"/api/v1/profile/\")\n    assert resp.status_code == status.HTTP_200_OK\n    assert resp.json()[\"username\"] == \"alice\"\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "test django api view authenticated request pytest",
+    "response": "from __future__ import annotations\n\nfrom django.contrib.auth import get_user_model\nfrom rest_framework import status\nfrom rest_framework.test import APIClient\n\n\ndef test_authenticated_profile_endpoint(db) -> None:\n    user = get_user_model().objects.create_user(username=\"alice\", password=\"strong-password-123\")\n    client = APIClient()\n    client.force_authenticate(user=user)\n    resp = client.get(\"/api/v1/profile/\")\n    assert resp.status_code == status.HTTP_200_OK\n    assert resp.json()[\"username\"] == \"alice\"\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python fastapi router pydantic endpoint",
+    "response": "from __future__ import annotations\n\nfrom fastapi import APIRouter\nfrom pydantic import BaseModel, Field\nfrom starlette.concurrency import run_in_threadpool\n\nrouter = APIRouter(prefix=\"/api/v1/compute\", tags=[\"Compute\"])\n\n\nclass ComputeRequest(BaseModel):\n    prompt: str = Field(..., min_length=1, max_length=16000)\n    tier: str = Field(default=\"flash\", pattern=\"^(flash|pro|advance)$\")\n\n\ndef _cpu_heavy_work(prompt: str, tier: str) -> dict[str, object]:\n    return {\"tier\": tier, \"tokens\": len(prompt.split()), \"status\": \"completed\"}\n\n\n@router.post(\"/run\")\nasync def run_compute(payload: ComputeRequest) -> dict[str, object]:\n    return await run_in_threadpool(_cpu_heavy_work, payload.prompt, payload.tier)\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "fastapi post route validation response model",
+    "response": "from __future__ import annotations\n\nfrom fastapi import APIRouter\nfrom pydantic import BaseModel, Field\nfrom starlette.concurrency import run_in_threadpool\n\nrouter = APIRouter(prefix=\"/api/v1/compute\", tags=[\"Compute\"])\n\n\nclass ComputeRequest(BaseModel):\n    prompt: str = Field(..., min_length=1, max_length=16000)\n    tier: str = Field(default=\"flash\", pattern=\"^(flash|pro|advance)$\")\n\n\ndef _cpu_heavy_work(prompt: str, tier: str) -> dict[str, object]:\n    return {\"tier\": tier, \"tokens\": len(prompt.split()), \"status\": \"completed\"}\n\n\n@router.post(\"/run\")\nasync def run_compute(payload: ComputeRequest) -> dict[str, object]:\n    return await run_in_threadpool(_cpu_heavy_work, payload.prompt, payload.tier)\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "fastapi async threadpool cpu offload run_in_threadpool",
+    "response": "from __future__ import annotations\n\nfrom fastapi import APIRouter\nfrom pydantic import BaseModel, Field\nfrom starlette.concurrency import run_in_threadpool\n\nrouter = APIRouter(prefix=\"/api/v1/compute\", tags=[\"Compute\"])\n\n\nclass ComputeRequest(BaseModel):\n    prompt: str = Field(..., min_length=1, max_length=16000)\n    tier: str = Field(default=\"flash\", pattern=\"^(flash|pro|advance)$\")\n\n\ndef _cpu_heavy_work(prompt: str, tier: str) -> dict[str, object]:\n    return {\"tier\": tier, \"tokens\": len(prompt.split()), \"status\": \"completed\"}\n\n\n@router.post(\"/run\")\nasync def run_compute(payload: ComputeRequest) -> dict[str, object]:\n    return await run_in_threadpool(_cpu_heavy_work, payload.prompt, payload.tier)\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python fastapi streamingresponse sse server sent events",
+    "response": "from __future__ import annotations\n\nimport json\nfrom collections.abc import Iterator\nfrom fastapi import APIRouter\nfrom fastapi.responses import StreamingResponse\n\nrouter = APIRouter(prefix=\"/api/v1/stream\", tags=[\"Streaming\"])\n\n\ndef _token_events(text: str) -> Iterator[str]:\n    for token in text.split():\n        yield f\"data: {json.dumps({'token': token})}\\n\\n\"\n    yield \"event: done\\ndata: {}\\n\\n\"\n\n\n@router.get(\"/chat\")\nasync def stream_chat(prompt: str) -> StreamingResponse:\n    return StreamingResponse(_token_events(prompt), media_type=\"text/event-stream\")\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "fastapi generator stream tokens text/event-stream",
+    "response": "from __future__ import annotations\n\nimport json\nfrom collections.abc import Iterator\nfrom fastapi import APIRouter\nfrom fastapi.responses import StreamingResponse\n\nrouter = APIRouter(prefix=\"/api/v1/stream\", tags=[\"Streaming\"])\n\n\ndef _token_events(text: str) -> Iterator[str]:\n    for token in text.split():\n        yield f\"data: {json.dumps({'token': token})}\\n\\n\"\n    yield \"event: done\\ndata: {}\\n\\n\"\n\n\n@router.get(\"/chat\")\nasync def stream_chat(prompt: str) -> StreamingResponse:\n    return StreamingResponse(_token_events(prompt), media_type=\"text/event-stream\")\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python async httpx client retry timeout",
+    "response": "from __future__ import annotations\n\nimport asyncio\nimport httpx\n\n\nasync def post_with_retry(url: str, payload: dict, retries: int = 3, timeout: float = 15.0) -> dict:\n    async with httpx.AsyncClient(timeout=timeout) as client:\n        for attempt in range(retries):\n            try:\n                resp = await client.post(url, json=payload)\n                resp.raise_for_status()\n                return resp.json()\n            except httpx.HTTPError:\n                if attempt == retries - 1:\n                    raise\n                await asyncio.sleep(0.4 * (2**attempt))\n    raise RuntimeError(\"Unreachable retry state\")\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "httpx async post json bearer auth python",
+    "response": "from __future__ import annotations\n\nimport asyncio\nimport httpx\n\n\nasync def post_with_retry(url: str, payload: dict, retries: int = 3, timeout: float = 15.0) -> dict:\n    async with httpx.AsyncClient(timeout=timeout) as client:\n        for attempt in range(retries):\n            try:\n                resp = await client.post(url, json=payload)\n                resp.raise_for_status()\n                return resp.json()\n            except httpx.HTTPError:\n                if attempt == retries - 1:\n                    raise\n                await asyncio.sleep(0.4 * (2**attempt))\n    raise RuntimeError(\"Unreachable retry state\")\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python numpy cosine similarity top k retrieval",
+    "response": "from __future__ import annotations\n\nimport numpy as np\n\n\ndef topk_cosine_similarity(corpus: np.ndarray, query: np.ndarray, k: int = 5) -> np.ndarray:\n    if corpus.size == 0:\n        return np.array([], dtype=np.int64)\n    corpus_norm = corpus / np.maximum(np.linalg.norm(corpus, axis=1, keepdims=True), 1e-8)\n    query_norm = query / np.maximum(np.linalg.norm(query), 1e-8)\n    scores = corpus_norm @ query_norm\n    limit = min(k, len(scores))\n    top_idx = np.argpartition(scores, -limit)[-limit:]\n    return top_idx[np.argsort(scores[top_idx])[::-1]]\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "vector similarity normalized matrix numpy code",
+    "response": "from __future__ import annotations\n\nimport numpy as np\n\n\ndef topk_cosine_similarity(corpus: np.ndarray, query: np.ndarray, k: int = 5) -> np.ndarray:\n    if corpus.size == 0:\n        return np.array([], dtype=np.int64)\n    corpus_norm = corpus / np.maximum(np.linalg.norm(corpus, axis=1, keepdims=True), 1e-8)\n    query_norm = query / np.maximum(np.linalg.norm(query), 1e-8)\n    scores = corpus_norm @ query_norm\n    limit = min(k, len(scores))\n    top_idx = np.argpartition(scores, -limit)[-limit:]\n    return top_idx[np.argsort(scores[top_idx])[::-1]]\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "cosine distance ranking numpy vector search",
+    "response": "from __future__ import annotations\n\nimport numpy as np\n\n\ndef topk_cosine_similarity(corpus: np.ndarray, query: np.ndarray, k: int = 5) -> np.ndarray:\n    if corpus.size == 0:\n        return np.array([], dtype=np.int64)\n    corpus_norm = corpus / np.maximum(np.linalg.norm(corpus, axis=1, keepdims=True), 1e-8)\n    query_norm = query / np.maximum(np.linalg.norm(query), 1e-8)\n    scores = corpus_norm @ query_norm\n    limit = min(k, len(scores))\n    top_idx = np.argpartition(scores, -limit)[-limit:]\n    return top_idx[np.argsort(scores[top_idx])[::-1]]\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write pytorch nn module transformer encoder attention model",
+    "response": "from __future__ import annotations\n\nimport torch\nimport torch.nn as nn\n\n\nclass TextClassifier(nn.Module):\n    def __init__(self, vocab_size: int = 2048, hidden_dim: int = 128, num_classes: int = 16) -> None:\n        super().__init__()\n        self.emb = nn.Embedding(vocab_size, hidden_dim, padding_idx=0)\n        layer = nn.TransformerEncoderLayer(\n            d_model=hidden_dim, nhead=4, dim_feedforward=hidden_dim * 2, batch_first=True\n        )\n        self.encoder = nn.TransformerEncoder(layer, num_layers=2)\n        self.head = nn.Linear(hidden_dim, num_classes)\n\n    def forward(self, token_ids: torch.Tensor) -> torch.Tensor:\n        x = self.encoder(self.emb(token_ids))\n        return self.head(x.mean(dim=1))\n\n\ndef train_epoch(model: nn.Module, x: torch.Tensor, y: torch.Tensor, lr: float = 1e-3) -> float:\n    opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)\n    criterion = nn.CrossEntropyLoss()\n    model.train()\n    opt.zero_grad()\n    loss = criterion(model(x), y)\n    loss.backward()\n    torch.nn.utils.clip_grad_norm_(model.parameters(), 1.5)\n    opt.step()\n    return float(loss.item())\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "pytorch adamw cosineannealinglr training loop clip_grad_norm",
+    "response": "from __future__ import annotations\n\nimport torch\nimport torch.nn as nn\n\n\nclass TextClassifier(nn.Module):\n    def __init__(self, vocab_size: int = 2048, hidden_dim: int = 128, num_classes: int = 16) -> None:\n        super().__init__()\n        self.emb = nn.Embedding(vocab_size, hidden_dim, padding_idx=0)\n        layer = nn.TransformerEncoderLayer(\n            d_model=hidden_dim, nhead=4, dim_feedforward=hidden_dim * 2, batch_first=True\n        )\n        self.encoder = nn.TransformerEncoder(layer, num_layers=2)\n        self.head = nn.Linear(hidden_dim, num_classes)\n\n    def forward(self, token_ids: torch.Tensor) -> torch.Tensor:\n        x = self.encoder(self.emb(token_ids))\n        return self.head(x.mean(dim=1))\n\n\ndef train_epoch(model: nn.Module, x: torch.Tensor, y: torch.Tensor, lr: float = 1e-3) -> float:\n    opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)\n    criterion = nn.CrossEntropyLoss()\n    model.train()\n    opt.zero_grad()\n    loss = criterion(model(x), y)\n    loss.backward()\n    torch.nn.utils.clip_grad_norm_(model.parameters(), 1.5)\n    opt.step()\n    return float(loss.item())\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "train neural classifier pytorch python code",
+    "response": "from __future__ import annotations\n\nimport torch\nimport torch.nn as nn\n\n\nclass TextClassifier(nn.Module):\n    def __init__(self, vocab_size: int = 2048, hidden_dim: int = 128, num_classes: int = 16) -> None:\n        super().__init__()\n        self.emb = nn.Embedding(vocab_size, hidden_dim, padding_idx=0)\n        layer = nn.TransformerEncoderLayer(\n            d_model=hidden_dim, nhead=4, dim_feedforward=hidden_dim * 2, batch_first=True\n        )\n        self.encoder = nn.TransformerEncoder(layer, num_layers=2)\n        self.head = nn.Linear(hidden_dim, num_classes)\n\n    def forward(self, token_ids: torch.Tensor) -> torch.Tensor:\n        x = self.encoder(self.emb(token_ids))\n        return self.head(x.mean(dim=1))\n\n\ndef train_epoch(model: nn.Module, x: torch.Tensor, y: torch.Tensor, lr: float = 1e-3) -> float:\n    opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)\n    criterion = nn.CrossEntropyLoss()\n    model.train()\n    opt.zero_grad()\n    loss = criterion(model(x), y)\n    loss.backward()\n    torch.nn.utils.clip_grad_norm_(model.parameters(), 1.5)\n    opt.step()\n    return float(loss.item())\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write tensorflow gradienttape adam training python code",
+    "response": "from __future__ import annotations\n\nimport tensorflow as tf\n\n\ndef build_and_step(x_batch: tf.Tensor, y_batch: tf.Tensor, hidden_dim: int = 128, num_classes: int = 16) -> float:\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hidden_dim, activation=\"gelu\"),\n        tf.keras.layers.Dense(num_classes),\n    ])\n    optimizer = tf.keras.optimizers.Adam(learning_rate=1e-3)\n    loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)\n    with tf.GradientTape() as tape:\n        logits = model(x_batch, training=True)\n        loss = loss_fn(y_batch, logits)\n    grads = tape.gradient(loss, model.trainable_variables)\n    optimizer.apply_gradients(zip(grads, model.trainable_variables))\n    return float(loss.numpy())\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "tensorflow dense neural network gradient tape loss",
+    "response": "from __future__ import annotations\n\nimport tensorflow as tf\n\n\ndef build_and_step(x_batch: tf.Tensor, y_batch: tf.Tensor, hidden_dim: int = 128, num_classes: int = 16) -> float:\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hidden_dim, activation=\"gelu\"),\n        tf.keras.layers.Dense(num_classes),\n    ])\n    optimizer = tf.keras.optimizers.Adam(learning_rate=1e-3)\n    loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)\n    with tf.GradientTape() as tape:\n        logits = model(x_batch, training=True)\n        loss = loss_fn(y_batch, logits)\n    grads = tape.gradient(loss, model.trainable_variables)\n    optimizer.apply_gradients(zip(grads, model.trainable_variables))\n    return float(loss.numpy())\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write pillow matplotlib colormap image png renderer python",
+    "response": "from __future__ import annotations\n\nimport io\nimport matplotlib\nimport numpy as np\nfrom PIL import Image, ImageEnhance\n\n\ndef render_colormap_png(width: int = 384, height: int = 384, cmap_name: str = \"plasma\") -> bytes:\n    yy, xx = np.mgrid[0:height, 0:width].astype(np.float32)\n    field = 0.5 + 0.5 * np.sin(xx * 0.045) * np.cos(yy * 0.045)\n    lut = matplotlib.colormaps.get_cmap(cmap_name)(np.linspace(0.0, 1.0, 256))[:, :3]\n    indices = np.clip((field * 255.0).astype(np.int32), 0, 255)\n    rgb = np.clip(lut[indices] * 255.0, 0, 255).astype(np.uint8)\n    img = ImageEnhance.Contrast(Image.fromarray(rgb, mode=\"RGB\")).enhance(1.08)\n    buf = io.BytesIO()\n    img.save(buf, format=\"PNG\", optimize=True)\n    return buf.getvalue()\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "pillow rgb lut colormap image synthesis code",
+    "response": "from __future__ import annotations\n\nimport io\nimport matplotlib\nimport numpy as np\nfrom PIL import Image, ImageEnhance\n\n\ndef render_colormap_png(width: int = 384, height: int = 384, cmap_name: str = \"plasma\") -> bytes:\n    yy, xx = np.mgrid[0:height, 0:width].astype(np.float32)\n    field = 0.5 + 0.5 * np.sin(xx * 0.045) * np.cos(yy * 0.045)\n    lut = matplotlib.colormaps.get_cmap(cmap_name)(np.linspace(0.0, 1.0, 256))[:, :3]\n    indices = np.clip((field * 255.0).astype(np.int32), 0, 255)\n    rgb = np.clip(lut[indices] * 255.0, 0, 255).astype(np.uint8)\n    img = ImageEnhance.Contrast(Image.fromarray(rgb, mode=\"RGB\")).enhance(1.08)\n    buf = io.BytesIO()\n    img.save(buf, format=\"PNG\", optimize=True)\n    return buf.getvalue()\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "create png gradient colormap numpy pillow matplotlib",
+    "response": "from __future__ import annotations\n\nimport io\nimport matplotlib\nimport numpy as np\nfrom PIL import Image, ImageEnhance\n\n\ndef render_colormap_png(width: int = 384, height: int = 384, cmap_name: str = \"plasma\") -> bytes:\n    yy, xx = np.mgrid[0:height, 0:width].astype(np.float32)\n    field = 0.5 + 0.5 * np.sin(xx * 0.045) * np.cos(yy * 0.045)\n    lut = matplotlib.colormaps.get_cmap(cmap_name)(np.linspace(0.0, 1.0, 256))[:, :3]\n    indices = np.clip((field * 255.0).astype(np.int32), 0, 255)\n    rgb = np.clip(lut[indices] * 255.0, 0, 255).astype(np.uint8)\n    img = ImageEnhance.Contrast(Image.fromarray(rgb, mode=\"RGB\")).enhance(1.08)\n    buf = io.BytesIO()\n    img.save(buf, format=\"PNG\", optimize=True)\n    return buf.getvalue()\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python ffmpeg libx264 mp4 encoder rawvideo pipeline",
+    "response": "from __future__ import annotations\n\nimport math\nimport subprocess\nimport tempfile\nfrom pathlib import Path\nimport imageio_ffmpeg\nimport numpy as np\n\n\ndef render_mp4_clip(output_path: Path, width: int = 320, height: int = 240, fps: int = 12, duration_s: int = 600) -> Path:\n    exe = imageio_ffmpeg.get_ffmpeg_exe()\n    cycle_s = 15\n    yy, xx = np.mgrid[0:height, 0:width].astype(np.float32)\n    with tempfile.TemporaryDirectory() as tmp:\n        cycle = Path(tmp) / \"cycle.mp4\"\n        concat_txt = Path(tmp) / \"concat.txt\"\n        cmd = [\n            exe, \"-y\", \"-v\", \"error\", \"-f\", \"rawvideo\", \"-pix_fmt\", \"rgb24\",\n            \"-s\", f\"{width}x{height}\", \"-r\", str(fps), \"-i\", \"pipe:0\",\n            \"-c:v\", \"libx264\", \"-preset\", \"ultrafast\", \"-pix_fmt\", \"yuv420p\", \"-g\", str(fps), str(cycle),\n        ]\n        proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)\n        assert proc.stdin is not None\n        for i in range(fps * cycle_s):\n            phase = 2.0 * math.pi * i / (fps * cycle_s)\n            frame = np.stack([\n                (0.5 + 0.5 * np.sin(xx * 0.04 + phase)) * 255,\n                (0.5 + 0.5 * np.cos(yy * 0.04 - phase)) * 255,\n                (0.5 + 0.5 * np.sin((xx + yy) * 0.025 + phase)) * 255,\n            ], axis=-1).astype(np.uint8)\n            proc.stdin.write(frame.tobytes())\n        proc.stdin.close()\n        proc.wait()\n        repeats = math.ceil(duration_s / cycle_s)\n        concat_txt.write_text(\"\\n\".join(f\"file '{cycle}'\" for _ in range(repeats)), encoding=\"utf-8\")\n        subprocess.run([exe, \"-y\", \"-f\", \"concat\", \"-safe\", \"0\", \"-i\", str(concat_txt), \"-c\", \"copy\", \"-movflags\", \"+faststart\", str(output_path)], check=True)\n    return output_path\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "synthesize mp4 video python numpy imageio ffmpeg",
+    "response": "from __future__ import annotations\n\nimport math\nimport subprocess\nimport tempfile\nfrom pathlib import Path\nimport imageio_ffmpeg\nimport numpy as np\n\n\ndef render_mp4_clip(output_path: Path, width: int = 320, height: int = 240, fps: int = 12, duration_s: int = 600) -> Path:\n    exe = imageio_ffmpeg.get_ffmpeg_exe()\n    cycle_s = 15\n    yy, xx = np.mgrid[0:height, 0:width].astype(np.float32)\n    with tempfile.TemporaryDirectory() as tmp:\n        cycle = Path(tmp) / \"cycle.mp4\"\n        concat_txt = Path(tmp) / \"concat.txt\"\n        cmd = [\n            exe, \"-y\", \"-v\", \"error\", \"-f\", \"rawvideo\", \"-pix_fmt\", \"rgb24\",\n            \"-s\", f\"{width}x{height}\", \"-r\", str(fps), \"-i\", \"pipe:0\",\n            \"-c:v\", \"libx264\", \"-preset\", \"ultrafast\", \"-pix_fmt\", \"yuv420p\", \"-g\", str(fps), str(cycle),\n        ]\n        proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)\n        assert proc.stdin is not None\n        for i in range(fps * cycle_s):\n            phase = 2.0 * math.pi * i / (fps * cycle_s)\n            frame = np.stack([\n                (0.5 + 0.5 * np.sin(xx * 0.04 + phase)) * 255,\n                (0.5 + 0.5 * np.cos(yy * 0.04 - phase)) * 255,\n                (0.5 + 0.5 * np.sin((xx + yy) * 0.025 + phase)) * 255,\n            ], axis=-1).astype(np.uint8)\n            proc.stdin.write(frame.tobytes())\n        proc.stdin.close()\n        proc.wait()\n        repeats = math.ceil(duration_s / cycle_s)\n        concat_txt.write_text(\"\\n\".join(f\"file '{cycle}'\" for _ in range(repeats)), encoding=\"utf-8\")\n        subprocess.run([exe, \"-y\", \"-f\", \"concat\", \"-safe\", \"0\", \"-i\", str(concat_txt), \"-c\", \"copy\", \"-movflags\", \"+faststart\", str(output_path)], check=True)\n    return output_path\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "generate 10 minute mp4 video python subprocess",
+    "response": "from __future__ import annotations\n\nimport math\nimport subprocess\nimport tempfile\nfrom pathlib import Path\nimport imageio_ffmpeg\nimport numpy as np\n\n\ndef render_mp4_clip(output_path: Path, width: int = 320, height: int = 240, fps: int = 12, duration_s: int = 600) -> Path:\n    exe = imageio_ffmpeg.get_ffmpeg_exe()\n    cycle_s = 15\n    yy, xx = np.mgrid[0:height, 0:width].astype(np.float32)\n    with tempfile.TemporaryDirectory() as tmp:\n        cycle = Path(tmp) / \"cycle.mp4\"\n        concat_txt = Path(tmp) / \"concat.txt\"\n        cmd = [\n            exe, \"-y\", \"-v\", \"error\", \"-f\", \"rawvideo\", \"-pix_fmt\", \"rgb24\",\n            \"-s\", f\"{width}x{height}\", \"-r\", str(fps), \"-i\", \"pipe:0\",\n            \"-c:v\", \"libx264\", \"-preset\", \"ultrafast\", \"-pix_fmt\", \"yuv420p\", \"-g\", str(fps), str(cycle),\n        ]\n        proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)\n        assert proc.stdin is not None\n        for i in range(fps * cycle_s):\n            phase = 2.0 * math.pi * i / (fps * cycle_s)\n            frame = np.stack([\n                (0.5 + 0.5 * np.sin(xx * 0.04 + phase)) * 255,\n                (0.5 + 0.5 * np.cos(yy * 0.04 - phase)) * 255,\n                (0.5 + 0.5 * np.sin((xx + yy) * 0.025 + phase)) * 255,\n            ], axis=-1).astype(np.uint8)\n            proc.stdin.write(frame.tobytes())\n        proc.stdin.close()\n        proc.wait()\n        repeats = math.ceil(duration_s / cycle_s)\n        concat_txt.write_text(\"\\n\".join(f\"file '{cycle}'\" for _ in range(repeats)), encoding=\"utf-8\")\n        subprocess.run([exe, \"-y\", \"-f\", \"concat\", \"-safe\", \"0\", \"-i\", str(concat_txt), \"-c\", \"copy\", \"-movflags\", \"+faststart\", str(output_path)], check=True)\n    return output_path\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python lru_cache fibonacci dynamic programming",
+    "response": "from __future__ import annotations\n\nfrom functools import lru_cache\n\n\n@lru_cache(maxsize=512)\ndef fibonacci(n: int) -> int:\n    if n < 0:\n        raise ValueError(\"n must be non-negative\")\n    if n <= 1:\n        return n\n    return fibonacci(n - 1) + fibonacci(n - 2)\n\n\ndef binary_search(nums: list[int], target: int) -> int:\n    lo, hi = 0, len(nums) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if nums[mid] == target:\n            return mid\n        if nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "python algorithm memoization binary search sequence",
+    "response": "from __future__ import annotations\n\nfrom functools import lru_cache\n\n\n@lru_cache(maxsize=512)\ndef fibonacci(n: int) -> int:\n    if n < 0:\n        raise ValueError(\"n must be non-negative\")\n    if n <= 1:\n        return n\n    return fibonacci(n - 1) + fibonacci(n - 2)\n\n\ndef binary_search(nums: list[int], target: int) -> int:\n    lo, hi = 0, len(nums) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if nums[mid] == target:\n            return mid\n        if nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python ast safe arithmetic calculator expression eval",
+    "response": "from __future__ import annotations\n\nimport ast\nimport operator\n\n_OPS = {ast.Add: operator.add, ast.Sub: operator.sub, ast.Mult: operator.mul, ast.Div: operator.truediv}\n\n\ndef safe_eval_math(expr: str) -> float:\n    def _eval(node: ast.AST) -> float:\n        if isinstance(node, ast.Expression):\n            return _eval(node.body)\n        if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):\n            return float(node.value)\n        if isinstance(node, ast.BinOp) and type(node.op) in _OPS:\n            return float(_OPS[type(node.op)](_eval(node.left), _eval(node.right)))\n        raise ValueError(\"Unsupported expression node\")\n\n    return _eval(ast.parse(expr.strip(), mode=\"eval\"))\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "safe python math parser ast binary operators",
+    "response": "from __future__ import annotations\n\nimport ast\nimport operator\n\n_OPS = {ast.Add: operator.add, ast.Sub: operator.sub, ast.Mult: operator.mul, ast.Div: operator.truediv}\n\n\ndef safe_eval_math(expr: str) -> float:\n    def _eval(node: ast.AST) -> float:\n        if isinstance(node, ast.Expression):\n            return _eval(node.body)\n        if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):\n            return float(node.value)\n        if isinstance(node, ast.BinOp) and type(node.op) in _OPS:\n            return float(_OPS[type(node.op)](_eval(node.left), _eval(node.right)))\n        raise ValueError(\"Unsupported expression node\")\n\n    return _eval(ast.parse(expr.strip(), mode=\"eval\"))\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write django custom middleware request latency logging",
+    "response": "from __future__ import annotations\n\nimport time\n\n\nclass RequestLatencyMiddleware:\n    def __init__(self, get_response) -> None:\n        self.get_response = get_response\n\n    def __call__(self, request):\n        t0 = time.perf_counter()\n        response = self.get_response(request)\n        elapsed_ms = (time.perf_counter() - t0) * 1000.0\n        response[\"X-Request-Latency-Ms\"] = f\"{elapsed_ms:.2f}\"\n        return response\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "django middleware measure response timing x-latency-ms",
+    "response": "from __future__ import annotations\n\nimport time\n\n\nclass RequestLatencyMiddleware:\n    def __init__(self, get_response) -> None:\n        self.get_response = get_response\n\n    def __call__(self, request):\n        t0 = time.perf_counter()\n        response = self.get_response(request)\n        elapsed_ms = (time.perf_counter() - t0) * 1000.0\n        response[\"X-Request-Latency-Ms\"] = f\"{elapsed_ms:.2f}\"\n        return response\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write django post_save signal auto create user profile quota",
+    "response": "from __future__ import annotations\n\nfrom django.conf import settings\nfrom django.db.models.signals import post_save\nfrom django.dispatch import receiver\n\n\n@receiver(post_save, sender=settings.AUTH_USER_MODEL)\ndef ensure_user_profile(sender, instance, created: bool, **kwargs) -> None:\n    if not created:\n        return\n    # Create default user profile/quota cleanly when a new user registers\n    profile_model = sender._meta.apps.get_model(\"api\", \"UserProfile\")\n    profile_model.objects.get_or_create(user=instance, defaults={\"default_tier\": \"flash\", \"default_task\": \"chat\"})\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "django signals receiver user created default profile",
+    "response": "from __future__ import annotations\n\nfrom django.conf import settings\nfrom django.db.models.signals import post_save\nfrom django.dispatch import receiver\n\n\n@receiver(post_save, sender=settings.AUTH_USER_MODEL)\ndef ensure_user_profile(sender, instance, created: bool, **kwargs) -> None:\n    if not created:\n        return\n    # Create default user profile/quota cleanly when a new user registers\n    profile_model = sender._meta.apps.get_model(\"api\", \"UserProfile\")\n    profile_model.objects.get_or_create(user=instance, defaults={\"default_tier\": \"flash\", \"default_task\": \"chat\"})\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python token bucket rate limiter sliding window",
+    "response": "from __future__ import annotations\n\nimport time\n\n\nclass TokenBucket:\n    def __init__(self, rate_per_sec: float, capacity: int) -> None:\n        self.rate = rate_per_sec\n        self.capacity = float(capacity)\n        self.tokens = float(capacity)\n        self.updated_at = time.monotonic()\n\n    def allow(self, cost: float = 1.0) -> bool:\n        now = time.monotonic()\n        self.tokens = min(self.capacity, self.tokens + (now - self.updated_at) * self.rate)\n        self.updated_at = now\n        if self.tokens < cost:\n            return False\n        self.tokens -= cost\n        return True\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "python api rate limit helper cooldown",
+    "response": "from __future__ import annotations\n\nimport time\n\n\nclass TokenBucket:\n    def __init__(self, rate_per_sec: float, capacity: int) -> None:\n        self.rate = rate_per_sec\n        self.capacity = float(capacity)\n        self.tokens = float(capacity)\n        self.updated_at = time.monotonic()\n\n    def allow(self, cost: float = 1.0) -> bool:\n        now = time.monotonic()\n        self.tokens = min(self.capacity, self.tokens + (now - self.updated_at) * self.rate)\n        self.updated_at = now\n        if self.tokens < cost:\n            return False\n        self.tokens -= cost\n        return True\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python keras 3 sequential classifier compile fit",
+    "response": "from __future__ import annotations\n\nimport os\nos.environ.setdefault(\"KERAS_BACKEND\", \"torch\")\n\nimport keras\nimport numpy as np\n\n\ndef train_keras_classifier(x_train: np.ndarray, y_train: np.ndarray, num_classes: int = 16) -> keras.Model:\n    model = keras.Sequential([\n        keras.layers.Input(shape=(x_train.shape[1],)),\n        keras.layers.Dense(128, activation=\"gelu\"),\n        keras.layers.Dropout(0.15),\n        keras.layers.Dense(num_classes, activation=\"softmax\"),\n    ])\n    model.compile(optimizer=\"adam\", loss=\"sparse_categorical_crossentropy\", metrics=[\"accuracy\"])\n    model.fit(x_train, y_train, epochs=5, batch_size=32, verbose=0)\n    return model\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "keras dense network softmax crossentropy fit code",
+    "response": "from __future__ import annotations\n\nimport os\nos.environ.setdefault(\"KERAS_BACKEND\", \"torch\")\n\nimport keras\nimport numpy as np\n\n\ndef train_keras_classifier(x_train: np.ndarray, y_train: np.ndarray, num_classes: int = 16) -> keras.Model:\n    model = keras.Sequential([\n        keras.layers.Input(shape=(x_train.shape[1],)),\n        keras.layers.Dense(128, activation=\"gelu\"),\n        keras.layers.Dropout(0.15),\n        keras.layers.Dense(num_classes, activation=\"softmax\"),\n    ])\n    model.compile(optimizer=\"adam\", loss=\"sparse_categorical_crossentropy\", metrics=[\"accuracy\"])\n    model.fit(x_train, y_train, epochs=5, batch_size=32, verbose=0)\n    return model\n",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python numpy vectorized softmax and cross entropy loss",
+    "response": "import numpy as np\n\ndef cross_entropy_loss(logits: np.ndarray, targets: np.ndarray) -> float:\n    shifted = logits - logits.max(axis=1, keepdims=True)\n    exp = np.exp(shifted)\n    probs = exp / np.maximum(exp.sum(axis=1, keepdims=True), 1e-9)\n    return float(-np.log(np.maximum(probs[np.arange(len(targets)), targets], 1e-8)).mean())",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python numpy compressed npz weight save and reload helper",
+    "response": "from pathlib import Path\nimport numpy as np\n\ndef save_weights_npz(path: Path, weights: dict[str, np.ndarray]) -> None:\n    path.parent.mkdir(parents=True, exist_ok=True)\n    np.savez_compressed(path, **{k: v.astype(np.float32) for k, v in weights.items()})\n\ndef load_weights_npz(path: Path) -> dict[str, np.ndarray]:\n    with np.load(path, allow_pickle=False) as archive:\n        return {k: np.asarray(archive[k], dtype=np.float32) for k in archive.files}",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python pillow fastoctree animated gif generator from numpy frames",
+    "response": "import io\nimport numpy as np\nfrom PIL import Image\n\ndef encode_frames_to_gif(frames_rgb: list[np.ndarray], fps: int = 12) -> bytes:\n    paletted = [\n        Image.fromarray(np.clip(f * 255.0, 0, 255).astype(np.uint8), mode='RGB')\n        .quantize(colors=128, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE)\n        for f in frames_rgb\n    ]\n    buf = io.BytesIO()\n    paletted[0].save(buf, format='GIF', save_all=True, append_images=paletted[1:], duration=int(1000 / max(1, fps)), loop=0, optimize=True)\n    return buf.getvalue()",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python matplotlib colormap lut blended image renderer",
+    "response": "import matplotlib\nimport numpy as np\nfrom PIL import Image\n\ndef colormap_to_image(scalar_field: np.ndarray, cmap_name: str = 'plasma') -> Image.Image:\n    norm = np.clip((scalar_field - scalar_field.min()) / max(float(scalar_field.ptp()), 1e-6), 0.0, 1.0)\n    rgba = matplotlib.colormaps.get_cmap(cmap_name)(norm)\n    rgb = np.clip(rgba[..., :3] * 255.0, 0, 255).astype(np.uint8)\n    return Image.fromarray(rgb, mode='RGB')",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python fastapi health and pydantic validation endpoint",
+    "response": "from fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass HealthStatus(BaseModel):\n    status: str\n    backends: list[str]\n\n@app.get('/api/v1/health', response_model=HealthStatus)\nasync def health() -> HealthStatus:\n    return HealthStatus(status='ok', backends=['numpy', 'pytorch', 'tensorflow', 'keras'])",
+    "intent": "code_python",
+    "task": "code"
+  },
+  {
+    "prompt": "write python django atomic row lock select_for_update credit service",
+    "response": "from django.db import transaction\n\ndef deduct_credits_atomic(quota_model, user_id: int, cost: int) -> int:\n    with transaction.atomic():\n        quota = quota_model.objects.select_for_update().get(user_id=user_id)\n        if quota.balance_credits < cost:\n            raise ValueError('Insufficient balance')\n        quota.balance_credits -= cost\n        quota.save(update_fields=['balance_credits'])\n        return quota.balance_credits",
+    "intent": "code_python",
+    "task": "code"
+  }
+]

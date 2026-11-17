@@ -1,0 +1,86 @@
+[
+  {
+    "prompt": "write postgresql select for update credit wallet transaction sql",
+    "response": "BEGIN;\n\nSELECT id, balance_credits\nFROM quota_userquota\nWHERE user_id = $1\nFOR UPDATE;\n\nUPDATE quota_userquota\nSET balance_credits = balance_credits - $2,\n    updated_at = NOW()\nWHERE user_id = $1\n  AND balance_credits >= $2\nRETURNING balance_credits;\n\nCOMMIT;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "sql begin commit lock user quota balance_credits",
+    "response": "BEGIN;\n\nSELECT id, balance_credits\nFROM quota_userquota\nWHERE user_id = $1\nFOR UPDATE;\n\nUPDATE quota_userquota\nSET balance_credits = balance_credits - $2,\n    updated_at = NOW()\nWHERE user_id = $1\n  AND balance_credits >= $2\nRETURNING balance_credits;\n\nCOMMIT;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql postgres create index concurrently partial gin jsonb",
+    "response": "CREATE INDEX CONCURRENTLY IF NOT EXISTS idx_training_samples_active_intent\n    ON api_trainingsamplerecord (intent, task)\n    WHERE is_active = TRUE;\n\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_training_runs_backends_gin\n    ON api_trainingrun\n    USING GIN (backends_trained);\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "postgresql indexing jsonb performance migration sql",
+    "response": "CREATE INDEX CONCURRENTLY IF NOT EXISTS idx_training_samples_active_intent\n    ON api_trainingsamplerecord (intent, task)\n    WHERE is_active = TRUE;\n\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_training_runs_backends_gin\n    ON api_trainingrun\n    USING GIN (backends_trained);\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql query group by model_tier date_trunc analytics",
+    "response": "SELECT\n    DATE_TRUNC('day', created_at) AS usage_day,\n    model_tier,\n    COUNT(*) AS total_requests,\n    COALESCE(SUM(credits_consumed), 0) AS credits_spent,\n    SUM(COUNT(*)) OVER (PARTITION BY model_tier ORDER BY DATE_TRUNC('day', created_at)) AS cumulative_requests\nFROM quota_quotausagelog\nWHERE created_at >= NOW() - INTERVAL '30 days'\nGROUP BY usage_day, model_tier\nORDER BY usage_day DESC, credits_spent DESC;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "postgres aggregate credits consumed window sum sql",
+    "response": "SELECT\n    DATE_TRUNC('day', created_at) AS usage_day,\n    model_tier,\n    COUNT(*) AS total_requests,\n    COALESCE(SUM(credits_consumed), 0) AS credits_spent,\n    SUM(COUNT(*)) OVER (PARTITION BY model_tier ORDER BY DATE_TRUNC('day', created_at)) AS cumulative_requests\nFROM quota_quotausagelog\nWHERE created_at >= NOW() - INTERVAL '30 days'\nGROUP BY usage_day, model_tier\nORDER BY usage_day DESC, credits_spent DESC;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql join conversation messages ordered by thread user",
+    "response": "SELECT\n    c.id AS conversation_id,\n    c.title,\n    c.tier,\n    m.role,\n    m.task,\n    m.content,\n    m.mime_type,\n    m.created_at\nFROM api_conversation c\nINNER JOIN api_conversationmessage m ON m.conversation_id = c.id\nWHERE c.user_id = $1\nORDER BY c.updated_at DESC, m.id ASC\nLIMIT 100;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "postgres select chat history conversation_id join",
+    "response": "SELECT\n    c.id AS conversation_id,\n    c.title,\n    c.tier,\n    m.role,\n    m.task,\n    m.content,\n    m.mime_type,\n    m.created_at\nFROM api_conversation c\nINNER JOIN api_conversationmessage m ON m.conversation_id = c.id\nWHERE c.user_id = $1\nORDER BY c.updated_at DESC, m.id ASC\nLIMIT 100;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql postgres insert on conflict upsert explain analyze",
+    "response": "INSERT INTO api_userprofile (user_id, display_name, default_tier, default_task, updated_at)\nVALUES ($1, $2, $3, $4, NOW())\nON CONFLICT (user_id)\nDO UPDATE SET\n    display_name = EXCLUDED.display_name,\n    default_tier = EXCLUDED.default_tier,\n    default_task = EXCLUDED.default_task,\n    updated_at = NOW();\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "postgresql upsert user profile unique key sql",
+    "response": "INSERT INTO api_userprofile (user_id, display_name, default_tier, default_task, updated_at)\nVALUES ($1, $2, $3, $4, NOW())\nON CONFLICT (user_id)\nDO UPDATE SET\n    display_name = EXCLUDED.display_name,\n    default_tier = EXCLUDED.default_tier,\n    default_task = EXCLUDED.default_task,\n    updated_at = NOW();\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql postgres cte paginated query total count window",
+    "response": "WITH filtered AS (\n    SELECT id, prompt, intent, task, updated_at\n    FROM api_trainingsamplerecord\n    WHERE is_active = TRUE\n      AND ($1 = '' OR task = $1)\n)\nSELECT\n    *,\n    COUNT(*) OVER () AS total_matches\nFROM filtered\nORDER BY updated_at DESC, id DESC\nLIMIT $2 OFFSET $3;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "postgres common table expression limit offset total rows sql",
+    "response": "WITH filtered AS (\n    SELECT id, prompt, intent, task, updated_at\n    FROM api_trainingsamplerecord\n    WHERE is_active = TRUE\n      AND ($1 = '' OR task = $1)\n)\nSELECT\n    *,\n    COUNT(*) OVER () AS total_matches\nFROM filtered\nORDER BY updated_at DESC, id DESC\nLIMIT $2 OFFSET $3;\n",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql postgresql window function running credit balance audit query",
+    "response": "SELECT\n    id,\n    user_id,\n    delta_credits,\n    SUM(delta_credits) OVER (PARTITION BY user_id ORDER BY created_at, id) AS running_balance,\n    created_at\nFROM transactions_usagetransaction\nWHERE user_id = $1\nORDER BY created_at DESC;",
+    "intent": "code_sql",
+    "task": "code"
+  },
+  {
+    "prompt": "write sql postgresql GIN partial index for fast JSONB and intent lookup",
+    "response": "CREATE INDEX CONCURRENTLY IF NOT EXISTS idx_samples_active_intent\n    ON api_trainingsamplerecord (intent, task)\n    WHERE is_active = TRUE;\n\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_run_backends_gin\n    ON api_trainingrun USING gin (backends_trained jsonb_path_ops);",
+    "intent": "code_sql",
+    "task": "code"
+  }
+]

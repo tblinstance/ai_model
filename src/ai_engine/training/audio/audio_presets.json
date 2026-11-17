@@ -1,0 +1,57 @@
+[
+  {
+    "prompt": "edge tts neural voice preset en us jenny natural speech",
+    "response": "Preset: en-US-JennyNeural. Modality: Edge-TTS neural speech synthesis. Sample rate: 24000 Hz, 16-bit linear PCM mono. Optimal for conversational assistants, clear narration, and low-latency audio responses.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "edge tts neural voice preset en us guy confident male narration",
+    "response": "Preset: en-US-GuyNeural. Modality: Edge-TTS neural speech synthesis. Sample rate: 24000 Hz, 16-bit linear PCM mono. Well suited for technical tutorials, executive briefs, and broadcast audio clips.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "edge tts neural voice preset bn bd nabanita bangla natural speech",
+    "response": "Preset: bn-BD-NabanitaNeural. Modality: Edge-TTS neural speech synthesis. Sample rate: 24000 Hz. Native Bengali (Bangladesh) female voice for localized regional customer assistants and voice responses.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "edge tts neural voice preset bn bd pradeep bangla male speech",
+    "response": "Preset: bn-BD-PradeepNeural. Modality: Edge-TTS neural speech synthesis. Sample rate: 24000 Hz. Native Bengali (Bangladesh) male voice for localized FinTech, bKash/Nagad transactional voice alerts.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "edge tts neural voice preset en gb sonia british accent speech",
+    "response": "Preset: en-GB-SoniaNeural. Modality: Edge-TTS neural speech synthesis. Sample rate: 24000 Hz, standard British RP English intonation for documentary narration and studio audio production.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "whisper asr transcription preset 16khz single channel float32",
+    "response": "Preset: Whisper ASR Base/Small. Sample rate: 16000 Hz mono. Log-Mel filterbank: 80 bins with 25ms window and 10ms hop. Optimized for real-time speech recognition, multi-language detection, and timestamped transcripts.",
+    "intent": "audio_transcription",
+    "task": "audio"
+  },
+  {
+    "prompt": "librosa acoustic inspection preset stft spectrogram spectral centroid",
+    "response": "Preset: Librosa Acoustic Inspector. Sample rate: 22050 Hz / 44100 Hz. STFT: n_fft=2048, hop_length=512, window='hann'. Computes waveform duration, RMS energy, spectral centroid, spectral rolloff, and zero-crossing rate.",
+    "intent": "audio_analysis",
+    "task": "audio"
+  },
+  {
+    "prompt": "audio encoding wav pcm 16 bit 44100 hz stereo master",
+    "response": "Preset: Studio WAV Master. Format: RIFF WAV, 44100 Hz, 16-bit stereo PCM (1411 kbps uncompressed). Designed for lossless studio export and high-fidelity archival.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "audio encoding mp3 vbr 192kbps web streaming distribution",
+    "response": "Preset: Web Streaming MP3. Format: MPEG-1 Audio Layer III, variable bitrate 192 kbps, 44100 Hz joint stereo with LAME encoder. Balances low latency and mobile bandwidth.",
+    "intent": "audio_generation",
+    "task": "audio"
+  }
+]
+

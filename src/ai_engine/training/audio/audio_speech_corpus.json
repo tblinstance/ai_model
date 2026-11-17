@@ -1,0 +1,123 @@
+[
+  {
+    "prompt": "synthesize voice speech for welcoming users to ai model studio platform",
+    "response": "Use AudioPipeline with Edge-TTS voice 'en-US-JennyNeural' to synthesize clear, natural introductory speech: 'Welcome to AI Model Studio. Neural generation, code synthesis, and multimodal pipelines are ready.' Output 24kHz MP3 format.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "generate audio speech female voice natural pacing edge tts",
+    "response": "Configure AudioPipeline with voice='en-US-JennyNeural', rate='+0%', pitch='+0Hz'. Stream audio chunks through Edge-TTS asynchronously and persist the generated audio artifact in the media directory.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "generate audio speech male voice confident narrator",
+    "response": "Configure AudioPipeline with voice='en-US-GuyNeural', rate='-2%', pitch='+0Hz'. Edge-TTS generates authoritative, broadcast-quality narration suitable for keynotes and documentation walkthroughs.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "synthesize bangla bengali voice speech bkash nagad payment alert",
+    "response": "Select Bengali neural voice 'bn-BD-NabanitaNeural' or 'bn-BD-PradeepNeural' with Edge-TTS: 'আপনার বিকাশ পেমেন্ট সফলভাবে সম্পন্ন হয়েছে।' Generates natural Bengali phonetic articulation and clear inflection.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "transcribe audio file speech to text whisper asr english",
+    "response": "Call AudioPipeline.transcribe(audio_path, model_size='base'). OpenAI Whisper resamples input to 16kHz mono, computes 80-channel log-Mel spectrograms, and outputs timestamped text transcriptions with language detection.",
+    "intent": "audio_transcription",
+    "task": "audio"
+  },
+  {
+    "prompt": "transcribe meeting recording multilingual speech recognition whisper timestamps",
+    "response": "Use Whisper ASR pipeline with language auto-detection and word-level timestamps. The sequence-to-sequence transformer decodes acoustic tokens into structured segments with precise start and end millisecond timestamps.",
+    "intent": "audio_transcription",
+    "task": "audio"
+  },
+  {
+    "prompt": "speech to text audio transcription wav mp3 whisper model",
+    "response": "Load audio file using soundfile or ffmpeg, normalize amplitude to [-1.0, 1.0], resample to 16,000 Hz, and execute Whisper forward pass to extract exact text transcripts with confidence scores.",
+    "intent": "audio_transcription",
+    "task": "audio"
+  },
+  {
+    "prompt": "analyze audio waveform spectrogram duration sample rate librosa soundfile",
+    "response": "Call AudioPipeline.analyze_audio(audio_path). Inspect audio properties: duration in seconds, sample rate (e.g. 24000 Hz or 44100 Hz), channel count, RMS energy, and spectral centroid using Librosa and Soundfile.",
+    "intent": "audio_analysis",
+    "task": "audio"
+  },
+  {
+    "prompt": "inspect acoustic frequency spectrum stft spectrogram harmonics",
+    "response": "Compute short-time Fourier transform (STFT) via librosa.stft(y, n_fft=2048, hop_length=512). Convert linear magnitude to decibels via librosa.amplitude_to_db() for spectrogram visualization and harmonic extraction.",
+    "intent": "audio_analysis",
+    "task": "audio"
+  },
+  {
+    "prompt": "compute audio rms energy zero crossing rate spectral rolloff librosa",
+    "response": "Extract acoustic features: RMS energy via librosa.feature.rms(), zero-crossing rate via librosa.feature.zero_crossing_rate(), and spectral rolloff at 85% energy percentile to evaluate voice brightness and noise floor.",
+    "intent": "audio_analysis",
+    "task": "audio"
+  },
+  {
+    "prompt": "convert text to speech ssml prosody pitch volume speed edge tts",
+    "response": "Wrap speech text in SSML <speak> markup specifying prosody rate='fast' pitch='+5Hz' volume='loud'. Edge-TTS renders expressive phoneme timings with smooth neural pitch transitions.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "generate podcast audio intro speech background ambient sound chime",
+    "response": "Synthesize intro voiceover with Edge-TTS, generate a clean harmonic sine chime via NumPy audio buffer (440Hz A4 with exponential decay), and mix the two stereo audio tracks at 44.1 kHz via soundfile.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "voice cloning insightface multimodal audio face alignment speech",
+    "response": "Extract facial biometric embeddings from user portrait using InsightFace, map identity features to acoustic timbre priors, and synthesize personalized voice audio aligned with facial appearance.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "detect speech language automatic whisper asr bangla english arabic",
+    "response": "Whisper encoder computes 30-second audio spectrogram slice, evaluates language classification head logits across 99 supported languages, and reports detected language code and probability score.",
+    "intent": "audio_transcription",
+    "task": "audio"
+  },
+  {
+    "prompt": "extract audio from mp4 video file ffmpeg convert to 16khz wav whisper",
+    "response": "Execute imageio-ffmpeg / ffmpeg command: `ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 16000 -ac 1 output_16k.wav`. Feeds the extracted single-channel WAV directly into Whisper ASR transcription.",
+    "intent": "audio_transcription",
+    "task": "audio"
+  },
+  {
+    "prompt": "synthesize audio notification chime notification alert beep sound",
+    "response": "Generate sinusoidal chime tensor using NumPy: y = sin(2*pi*880*t) * exp(-5*t) + sin(2*pi*1760*t) * exp(-8*t) at 44.1 kHz. Export to WAV using soundfile.write() for instantaneous UI notification playback.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "remove background noise audio speech enhancement bandpass filter",
+    "response": "Apply Butterworth bandpass filter (80 Hz to 7500 Hz) using SciPy/Librosa to eliminate low-frequency rumble and high-frequency hiss from vocal recordings prior to Whisper transcription.",
+    "intent": "audio_analysis",
+    "task": "audio"
+  },
+  {
+    "prompt": "calculate audio bitrate uncompressed pcm vs compressed mp3",
+    "response": "Uncompressed 16-bit 44.1kHz stereo PCM bitrate is 44100 * 16 * 2 = 1,411.2 kbps (10.5 MB/min). MP3 at 192 kbps compresses audio by ~7.3x to 1.44 MB/min with transparent perceptual psychoacoustic quality.",
+    "intent": "audio_analysis",
+    "task": "audio"
+  },
+  {
+    "prompt": "synthesize british english female voice tutorial narration edge tts",
+    "response": "Use Edge-TTS voice 'en-GB-SoniaNeural'. The British English voice produces precise phoneme articulation, natural syllable timing, and neutral conversational tone ideal for technical education modules.",
+    "intent": "audio_generation",
+    "task": "audio"
+  },
+  {
+    "prompt": "stream audio bytes real time chunked transfer encoding fast api",
+    "response": "Wrap Edge-TTS async audio stream in a FastAPI StreamingResponse(media_type='audio/mpeg'). Chunks are yielded immediately to the client browser enabling low-latency inline HTML5 audio playback.",
+    "intent": "audio_generation",
+    "task": "audio"
+  }
+]
+

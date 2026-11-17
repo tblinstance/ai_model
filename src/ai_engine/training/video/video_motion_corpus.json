@@ -1,0 +1,2450 @@
+[
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video orbital rings harmonic oscillation periodic phase rotation electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'orbital rings harmonic oscillation' featuring periodic phase rotation and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video standing sine wave interference ripple cross-axis wave modulation electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'standing sine wave interference ripple' featuring cross-axis wave modulation and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video bioluminescent tidal pulse radial glow expansion electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'bioluminescent tidal pulse' featuring radial glow expansion and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video aurora ribbon phase drift flowing spectral curtain blend electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'aurora ribbon phase drift' featuring flowing spectral curtain blend and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video kaleidoscopic symmetric morph two-keyframe spatial field interpolation electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'kaleidoscopic symmetric morph' featuring two-keyframe spatial field interpolation and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video cyber radar sweep beacon pulsing focal orbit overlay electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'cyber radar sweep beacon' featuring pulsing focal orbit overlay and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video solar plasma corona shimmer layered trig turbulence electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'solar plasma corona shimmer' featuring layered trig turbulence and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence cinematic neon flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and cinematic neon tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence soft pastel mist flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and soft pastel mist tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence crisp monochrome flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and crisp monochrome tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence electric aurora flash 256x240 12f 8fps",
+    "response": "Synthesize 12-frame animated GIF (256x240 @ 8 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and electric aurora tones via `flash` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence cinematic neon pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and cinematic neon tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence soft pastel mist pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and soft pastel mist tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence crisp monochrome pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and crisp monochrome tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence electric aurora pro 320x240 18f 12fps",
+    "response": "Synthesize 18-frame animated GIF (320x240 @ 12 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and electric aurora tones via `pro` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence cinematic neon advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and cinematic neon tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence soft pastel mist advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and soft pastel mist tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence crisp monochrome advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and crisp monochrome tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create animated gif video minimalist liquid glass wave smooth cosine blend cadence electric aurora advance 320x240 24f 15fps",
+    "response": "Synthesize 24-frame animated GIF (320x240 @ 15 FPS) for 'minimalist liquid glass wave' featuring smooth cosine blend cadence and electric aurora tones via `advance` NumPy keyframe blending + Pillow FASTOCTREE quantization.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 12 frames 8 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 8 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 18 frames 8 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 8 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 24 frames 8 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 8 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 12 frames 12 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 12 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 18 frames 12 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 12 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 24 frames 12 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 12 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 12 frames 15 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 15 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 18 frames 15 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 15 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video emerald sonar pulse ripple (concentric cosine rings) 24 frames 15 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 15 FPS for 'emerald sonar pulse ripple' (concentric cosine rings) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 12 frames 8 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 8 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 18 frames 8 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 8 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 24 frames 8 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 8 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 12 frames 12 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 12 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 18 frames 12 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 12 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 24 frames 12 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 12 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 12 frames 15 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 15 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 18 frames 15 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 15 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video amber solar horizon shimmer (warm gradient interference) 24 frames 15 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 15 FPS for 'amber solar horizon shimmer' (warm gradient interference) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 12 frames 8 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 8 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 18 frames 8 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 8 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 24 frames 8 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 8 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 12 frames 12 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 12 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 18 frames 12 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 12 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 24 frames 12 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 12 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 12 frames 15 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 15 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 18 frames 15 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 15 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video cobalt neural matrix scan wave (orthogonal sinusoidal sweep) 24 frames 15 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 15 FPS for 'cobalt neural matrix scan wave' (orthogonal sinusoidal sweep) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 12 frames 8 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 8 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 18 frames 8 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 8 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 24 frames 8 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 8 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 12 frames 12 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 12 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 18 frames 12 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 12 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 24 frames 12 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 12 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 12 frames 15 fps",
+    "response": "Synthesize 12-frame looping GIF animation at 15 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 18 frames 15 fps",
+    "response": "Synthesize 18-frame looping GIF animation at 15 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "render looping animated gif video violet prism spectral rotation (angular arctan2 phase drift) 24 frames 15 fps",
+    "response": "Synthesize 24-frame looping GIF animation at 15 FPS for 'violet prism spectral rotation' (angular arctan2 phase drift) using NumPy field blending + Pillow FASTOCTREE compression.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video orbital plasma ring electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=viridis, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=viridis, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=viridis, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=viridis, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=viridis, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=viridis, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=viridis, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=viridis, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=viridis, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=viridis, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=viridis, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=viridis, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video tidal bioluminescent ocean electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=viridis, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video cosmic nebula vortex electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video cybernetic laser matrix grid electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video golden solar corona flare electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=PuBu, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=PuBu, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=PuBu, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=PuBu, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=PuBu, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=PuBu, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=PuBu, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=PuBu, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=PuBu, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=PuBu, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=PuBu, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=PuBu, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video arctic glacier aurora wave electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=PuBu, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=YlGn, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=YlGn, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=YlGn, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=YlGn, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=YlGn, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=YlGn, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=YlGn, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=YlGn, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=YlGn, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=YlGn, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=YlGn, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=YlGn, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video emerald rainforest mist flow electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=YlGn, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=Greys_r, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=Greys_r, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=Greys_r, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=Greys_r, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=Greys_r, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=Greys_r, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=Greys_r, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=Greys_r, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=Greys_r, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame ripple looping GIF (256x240 @ 8 FPS, colormap=Greys_r, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame ripple looping GIF (256x240 @ 10 FPS, colormap=Greys_r, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame ripple looping GIF (320x240 @ 12 FPS, colormap=Greys_r, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create ripple animated gif video monochrome acoustic standing wave electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame ripple looping GIF (320x240 @ 15 FPS, colormap=Greys_r, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame orbit looping GIF (256x240 @ 8 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame orbit looping GIF (256x240 @ 10 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame orbit looping GIF (320x240 @ 12 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create orbit animated gif video twilight mountain horizon flyover electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame orbit looping GIF (320x240 @ 15 FPS, colormap=twilight_shifted, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=turbo, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=turbo, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=turbo, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=turbo, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=turbo, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=turbo, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=turbo, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=turbo, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=turbo, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=turbo, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=turbo, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=turbo, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video quantum interference torus electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=turbo, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame vortex looping GIF (256x240 @ 8 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame vortex looping GIF (256x240 @ 10 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame vortex looping GIF (320x240 @ 12 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create vortex animated gif video neon prism crystal rotation electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame vortex looping GIF (320x240 @ 15 FPS, colormap=plasma, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field smooth ease loop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field smooth ease loop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field smooth ease loop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field smooth ease loop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field smooth ease loop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='smooth ease loop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field high-contrast glow 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field high-contrast glow 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field high-contrast glow 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field high-contrast glow 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field high-contrast glow 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='high-contrast glow') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field pastel mist blend 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field pastel mist blend 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field pastel mist blend 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field pastel mist blend 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field pastel mist blend 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='pastel mist blend') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field electric dark backdrop 256x240 12 frames 8 fps",
+    "response": "Synthesize 12-frame sweep looping GIF (256x240 @ 8 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field electric dark backdrop 256x240 16 frames 10 fps",
+    "response": "Synthesize 16-frame sweep looping GIF (256x240 @ 10 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field electric dark backdrop 320x240 18 frames 12 fps",
+    "response": "Synthesize 18-frame sweep looping GIF (320x240 @ 12 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field electric dark backdrop 320x240 24 frames 15 fps",
+    "response": "Synthesize 24-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create sweep animated gif video volcanic ember convecting field electric dark backdrop 320x240 30 frames 15 fps",
+    "response": "Synthesize 30-frame sweep looping GIF (320x240 @ 15 FPS, colormap=inferno, look='electric dark backdrop') via NumPy phase fields + Matplotlib LUT + Pillow FASTOCTREE.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video playful bouncing character motion vibrant primary cel-shaded flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) carton video animation (256x240 @ 8fps) for \"playful bouncing character motion\" featuring vibrant primary cel-shaded styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video playful bouncing character motion vibrant primary cel-shaded flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) cartoon video animation (256x240 @ 8fps) for \"playful bouncing character motion\" featuring vibrant primary cel-shaded styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video playful bouncing character motion vibrant primary cel-shaded pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) carton video animation (320x240 @ 12fps) for \"playful bouncing character motion\" featuring vibrant primary cel-shaded styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video playful bouncing character motion vibrant primary cel-shaded pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) cartoon video animation (320x240 @ 12fps) for \"playful bouncing character motion\" featuring vibrant primary cel-shaded styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video playful bouncing character motion vibrant primary cel-shaded advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) carton video animation (384x288 @ 15fps) for \"playful bouncing character motion\" featuring vibrant primary cel-shaded styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video playful bouncing character motion vibrant primary cel-shaded advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) cartoon video animation (384x288 @ 15fps) for \"playful bouncing character motion\" featuring vibrant primary cel-shaded styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video comic pop art ink outline sequence high-contrast comic tab10 flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) carton video animation (256x240 @ 8fps) for \"comic pop art ink outline sequence\" featuring high-contrast comic tab10 styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video comic pop art ink outline sequence high-contrast comic tab10 flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) cartoon video animation (256x240 @ 8fps) for \"comic pop art ink outline sequence\" featuring high-contrast comic tab10 styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video comic pop art ink outline sequence high-contrast comic tab10 pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) carton video animation (320x240 @ 12fps) for \"comic pop art ink outline sequence\" featuring high-contrast comic tab10 styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video comic pop art ink outline sequence high-contrast comic tab10 pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) cartoon video animation (320x240 @ 12fps) for \"comic pop art ink outline sequence\" featuring high-contrast comic tab10 styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video comic pop art ink outline sequence high-contrast comic tab10 advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) carton video animation (384x288 @ 15fps) for \"comic pop art ink outline sequence\" featuring high-contrast comic tab10 styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video comic pop art ink outline sequence high-contrast comic tab10 advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) cartoon video animation (384x288 @ 15fps) for \"comic pop art ink outline sequence\" featuring high-contrast comic tab10 styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video classic 2D cel animated walk cycle retro animated cartoon flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) carton video animation (256x240 @ 8fps) for \"classic 2D cel animated walk cycle\" featuring retro animated cartoon styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video classic 2D cel animated walk cycle retro animated cartoon flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) cartoon video animation (256x240 @ 8fps) for \"classic 2D cel animated walk cycle\" featuring retro animated cartoon styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video classic 2D cel animated walk cycle retro animated cartoon pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) carton video animation (320x240 @ 12fps) for \"classic 2D cel animated walk cycle\" featuring retro animated cartoon styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video classic 2D cel animated walk cycle retro animated cartoon pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) cartoon video animation (320x240 @ 12fps) for \"classic 2D cel animated walk cycle\" featuring retro animated cartoon styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video classic 2D cel animated walk cycle retro animated cartoon advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) carton video animation (384x288 @ 15fps) for \"classic 2D cel animated walk cycle\" featuring retro animated cartoon styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video classic 2D cel animated walk cycle retro animated cartoon advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) cartoon video animation (384x288 @ 15fps) for \"classic 2D cel animated walk cycle\" featuring retro animated cartoon styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video colorful anime fantasy landscape motion vivid saturated cel-shaded flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) carton video animation (256x240 @ 8fps) for \"colorful anime fantasy landscape motion\" featuring vivid saturated cel-shaded styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video colorful anime fantasy landscape motion vivid saturated cel-shaded flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) cartoon video animation (256x240 @ 8fps) for \"colorful anime fantasy landscape motion\" featuring vivid saturated cel-shaded styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video colorful anime fantasy landscape motion vivid saturated cel-shaded pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) carton video animation (320x240 @ 12fps) for \"colorful anime fantasy landscape motion\" featuring vivid saturated cel-shaded styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video colorful anime fantasy landscape motion vivid saturated cel-shaded pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) cartoon video animation (320x240 @ 12fps) for \"colorful anime fantasy landscape motion\" featuring vivid saturated cel-shaded styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video colorful anime fantasy landscape motion vivid saturated cel-shaded advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) carton video animation (384x288 @ 15fps) for \"colorful anime fantasy landscape motion\" featuring vivid saturated cel-shaded styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video colorful anime fantasy landscape motion vivid saturated cel-shaded advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) cartoon video animation (384x288 @ 15fps) for \"colorful anime fantasy landscape motion\" featuring vivid saturated cel-shaded styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video whimsical toon squashing and stretching motion playful candy pastel cel flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) carton video animation (256x240 @ 8fps) for \"whimsical toon squashing and stretching motion\" featuring playful candy pastel cel styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video whimsical toon squashing and stretching motion playful candy pastel cel flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) cartoon video animation (256x240 @ 8fps) for \"whimsical toon squashing and stretching motion\" featuring playful candy pastel cel styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video whimsical toon squashing and stretching motion playful candy pastel cel pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) carton video animation (320x240 @ 12fps) for \"whimsical toon squashing and stretching motion\" featuring playful candy pastel cel styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video whimsical toon squashing and stretching motion playful candy pastel cel pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) cartoon video animation (320x240 @ 12fps) for \"whimsical toon squashing and stretching motion\" featuring playful candy pastel cel styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video whimsical toon squashing and stretching motion playful candy pastel cel advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) carton video animation (384x288 @ 15fps) for \"whimsical toon squashing and stretching motion\" featuring playful candy pastel cel styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video whimsical toon squashing and stretching motion playful candy pastel cel advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) cartoon video animation (384x288 @ 15fps) for \"whimsical toon squashing and stretching motion\" featuring playful candy pastel cel styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video dynamic action comic cartoon panel flow punchy comic pop art flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) carton video animation (256x240 @ 8fps) for \"dynamic action comic cartoon panel flow\" featuring punchy comic pop art styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video dynamic action comic cartoon panel flow punchy comic pop art flash 256x240 12f 8fps",
+    "response": "Synthesize 10-minute (600s) cartoon video animation (256x240 @ 8fps) for \"dynamic action comic cartoon panel flow\" featuring punchy comic pop art styling via `flash` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video dynamic action comic cartoon panel flow punchy comic pop art pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) carton video animation (320x240 @ 12fps) for \"dynamic action comic cartoon panel flow\" featuring punchy comic pop art styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video dynamic action comic cartoon panel flow punchy comic pop art pro 320x240 18f 12fps",
+    "response": "Synthesize 12-minute (720s) cartoon video animation (320x240 @ 12fps) for \"dynamic action comic cartoon panel flow\" featuring punchy comic pop art styling via `pro` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "train carton video dynamic action comic cartoon panel flow punchy comic pop art advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) carton video animation (384x288 @ 15fps) for \"dynamic action comic cartoon panel flow\" featuring punchy comic pop art styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  },
+  {
+    "prompt": "create cartoon video dynamic action comic cartoon panel flow punchy comic pop art advance 384x288 24f 15fps",
+    "response": "Synthesize 15-minute (900s) cartoon video animation (384x288 @ 15fps) for \"dynamic action comic cartoon panel flow\" featuring punchy comic pop art styling via `advance` NumPy keyframe harmonic cel-shading + FFmpeg H.264 MP4 encoder.",
+    "intent": "video_generation",
+    "task": "video"
+  }
+]

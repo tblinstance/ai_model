@@ -1,0 +1,329 @@
+{% verbatim %}
+<!-- Djoser Auth Modal -->
+<div v-if="store.showAuthModal" class="fixed inset-0 z-50 bg-black/55 dark:bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="glass-panel rounded-2xl max-w-md w-full p-6 space-y-4 border border-slate-200 dark:border-slate-700 shadow-2xl">
+    <div class="flex items-center justify-between">
+      <div>
+        <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">
+          {{ store.authMode === 'login' ? 'Welcome Back' : 'Create tblinc Account' }}
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400">
+          {{ store.authMode === 'login' ? 'Sign in with your Djoser JWT credentials' : 'Register to unlock quota, agents, and billing' }}
+        </p>
+      </div>
+      <button type="button" @click="store.showAuthModal = false" class="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+{% endverbatim %}
+{% include "partials/auth_card.html" %}
+{% verbatim %}
+  </div>
+</div>
+
+<!-- Balance & Deposit Modal -->
+<div v-if="store.showTopupModal" class="fixed inset-0 z-50 bg-black/55 dark:bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="glass-panel rounded-2xl max-w-lg max-h-[92vh] overflow-y-auto w-full p-6 space-y-4 border border-slate-200 dark:border-slate-700 shadow-2xl">
+    <div class="flex items-start justify-between gap-2">
+      <div>
+        <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="shopping-bag" class="w-4 h-4 text-cyan-500"></i>
+          <span>Balance &amp; Deposit (BDT · USD)</span>
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400">
+          Balance: <span class="font-mono font-semibold text-slate-900 dark:text-white">{{ formatCreditsBdtUsd(store.quota?.remaining_credits ?? 0) }}</span> · Rate: <span class="font-mono">$1 = ৳120</span>
+        </p>
+      </div>
+      <button type="button" :disabled="store.checkoutBusy" @click="closeCheckout" class="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+
+    <div v-if="!store.checkoutReceipt" class="space-y-4">
+      <div class="grid grid-cols-2 gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+        <button
+          type="button"
+          :disabled="store.checkoutBusy"
+          @click="store.checkoutMode = 'credits'; store.checkoutError = ''"
+          class="py-2 rounded-lg text-xs font-semibold transition flex items-center justify-center gap-1.5"
+          :class="store.checkoutMode === 'credits' ? 'bg-indigo-600 text-white shadow' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'"
+        >
+          <i data-lucide="coins" class="w-3.5 h-3.5"></i>
+          <span>Top Up Balance</span>
+        </button>
+        <button
+          type="button"
+          :disabled="store.checkoutBusy"
+          @click="store.checkoutMode = 'plans'; store.checkoutError = ''"
+          class="py-2 rounded-lg text-xs font-semibold transition flex items-center justify-center gap-1.5"
+          :class="store.checkoutMode === 'plans' ? 'bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'"
+        >
+          <i data-lucide="credit-card" class="w-3.5 h-3.5"></i>
+          <span>Upgrade Plan</span>
+        </button>
+      </div>
+
+      <div v-if="store.checkoutError" class="rounded-xl bg-rose-50 dark:bg-rose-500/15 border border-rose-200 dark:border-rose-500/40 px-3.5 py-2.5 text-xs text-rose-700 dark:text-rose-200 break-words">
+        {{ store.checkoutError }}
+      </div>
+
+      <div v-if="store.checkoutMode === 'credits'" class="space-y-3">
+        <div class="grid grid-cols-4 gap-1.5 text-xs font-mono">
+          <button
+            v-for="amt in [100, 500, 2000, 5000]"
+            :key="'pk-' + amt"
+            type="button"
+            :disabled="store.checkoutBusy"
+            @click="topupAmount = amt; store.checkoutError = ''"
+            class="py-2 rounded-lg border transition text-center"
+            :class="Number(topupAmount) === amt ? 'border-cyan-500 bg-cyan-50 dark:bg-cyan-500/15 text-cyan-700 dark:text-cyan-300 font-semibold' : 'border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300'"
+          >
+            <div>{{ formatBdt(amt * 1.2) }}</div>
+            <div class="text-[10px] opacity-85">${{ (amt * 0.01).toFixed(2) }} USD</div>
+          </button>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-medium text-slate-600 dark:text-slate-400 mb-1">
+            Custom Balance Units (৳1.20 BDT / $0.01 USD per unit · min 10)
+          </label>
+          <input
+            v-model="topupAmount"
+            type="number"
+            min="10"
+            max="100000"
+            step="10"
+            :disabled="store.checkoutBusy"
+            class="w-full rounded-xl bg-slate-50 dark:bg-slate-950 border px-3.5 py-2 text-sm text-slate-900 dark:text-white font-mono focus:outline-none"
+            :class="topupValidationMsg ? 'border-rose-400 dark:border-rose-500/70' : 'border-slate-300 dark:border-slate-700 focus:border-cyan-500'"
+          />
+          <p v-if="topupValidationMsg" class="mt-1 text-[11px] text-rose-600 dark:text-rose-400">
+            {{ topupValidationMsg }}
+          </p>
+        </div>
+
+        <!-- MFS Payment Selector + TrxID -->
+        <div class="space-y-2 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-3">
+          <div class="flex items-center justify-between text-[11px]">
+            <span class="font-semibold text-slate-700 dark:text-slate-200">BDT MFS Payment Method</span>
+            <span class="font-mono font-bold text-cyan-600 dark:text-cyan-300">{{ topupValid ? formatBdt(Number(topupAmount) * 1.2) : '৳0.00' }}</span>
+          </div>
+          <div class="grid grid-cols-4 gap-1.5">
+            <button
+              v-for="m in mfsMethods"
+              :key="'mfs-cr-' + m.id"
+              type="button"
+              :disabled="store.checkoutBusy"
+              @click="store.checkoutMethod = m.id; store.checkoutError = ''"
+              class="py-1.5 rounded-lg border text-xs font-semibold transition"
+              :class="store.checkoutMethod === m.id ? 'border-cyan-500 bg-cyan-50 dark:bg-cyan-500/15 text-cyan-700 dark:text-cyan-300' : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300'"
+            >
+              {{ m.label }}
+            </button>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400">
+            Send <span class="font-mono font-semibold text-slate-900 dark:text-white">{{ topupValid ? formatBdt(Number(topupAmount) * 1.2) : '৳0.00' }}</span> via {{ selectedMfsMeta.hint }}, then enter TrxID:
+          </p>
+          <input
+            v-model="store.checkoutTnxid"
+            type="text"
+            :disabled="store.checkoutBusy"
+            placeholder="TrxID (e.g. BKASH8X92K4)"
+            class="w-full rounded-xl bg-white dark:bg-slate-900 border px-3 py-2 text-xs font-mono uppercase text-slate-900 dark:text-white focus:outline-none"
+            :class="store.checkoutTnxid && !tnxidValid ? 'border-rose-400' : 'border-slate-300 dark:border-slate-700 focus:border-cyan-500'"
+            @input="store.checkoutTnxid = String(store.checkoutTnxid || '').toUpperCase()"
+          />
+          <p v-if="store.checkoutTnxid && !tnxidValid" class="text-[11px] text-rose-600 dark:text-rose-400">
+            TrxID must be at least 6 alphanumeric characters.
+          </p>
+        </div>
+
+        <div class="rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-3 space-y-1.5 text-xs">
+          <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+            <span>Value Added</span>
+            <span class="font-mono font-semibold text-slate-900 dark:text-white">
+              {{ topupValid ? formatCreditsBdtUsd(Number(topupAmount), { signed: true, compact: true }) : '—' }}
+            </span>
+          </div>
+          <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+            <span>Projected Balance</span>
+            <span class="font-mono font-semibold text-emerald-600 dark:text-emerald-400">
+              {{ formatCreditsBdtUsd(projectedCreditBalance, { compact: true }) }}
+            </span>
+          </div>
+          <div class="border-t border-slate-200 dark:border-slate-800 pt-1.5 flex items-center justify-between">
+            <span class="font-medium text-slate-700 dark:text-slate-300">Order Total ({{ selectedMfsMeta.label }})</span>
+            <span class="font-mono text-sm font-bold text-slate-900 dark:text-white">
+              {{ topupValid ? formatBdt(Number(topupAmount) * 1.2) : '৳0.00' }}
+            </span>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          :disabled="!topupValid || !tnxidValid || store.checkoutBusy"
+          @click="submitTopup"
+          class="w-full py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:opacity-95 text-white text-sm font-semibold disabled:opacity-45 disabled:cursor-not-allowed"
+        >
+          {{ store.checkoutBusy ? 'Processing Deposit...' : (!topupValid ? 'Enter Valid Amount' : (!tnxidValid ? 'Enter ' + selectedMfsMeta.label + ' TrxID' : 'Complete Deposit · ' + formatBdt(Number(topupAmount) * 1.2))) }}
+        </button>
+      </div>
+
+      <div v-else class="space-y-3">
+        <div class="space-y-1.5 max-h-48 overflow-y-auto custom-scroll pr-0.5">
+          <button
+            v-for="plan in store.plans"
+            :key="'chk-plan-' + plan.slug"
+            type="button"
+            :disabled="store.checkoutBusy || store.subscription?.plan?.slug === plan.slug"
+            @click="store.checkoutPlanSlug = plan.slug; store.checkoutError = ''"
+            class="w-full text-left rounded-xl p-3 border flex items-center justify-between gap-2 transition"
+            :class="store.subscription?.plan?.slug === plan.slug
+              ? 'border-emerald-500/40 bg-emerald-50/40 dark:bg-emerald-500/10 opacity-85 cursor-default'
+              : (store.checkoutPlanSlug === plan.slug
+                ? 'border-cyan-500 bg-cyan-50/60 dark:bg-cyan-500/15'
+                : 'border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/60')"
+          >
+            <div class="min-w-0">
+              <div class="flex items-center gap-2">
+                <span class="font-display font-semibold text-sm text-slate-900 dark:text-white">{{ plan.name }}</span>
+                <span v-if="store.subscription?.plan?.slug === plan.slug" class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300">Current</span>
+                <span v-else-if="store.checkoutPlanSlug === plan.slug" class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-cyan-100 dark:bg-cyan-500/20 text-cyan-700 dark:text-cyan-300">Selected</span>
+              </div>
+              <div class="text-[11px] font-mono text-slate-600 dark:text-slate-400">
+                {{ Number(plan.monthly_price_usd) === 0 ? 'Free switch' : ('Usage Value: ' + formatCreditsBdtUsd(plan.monthly_credits, { signed: true, compact: true })) }} · {{ Number(plan.daily_request_limit).toLocaleString() }} req/day
+              </div>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="font-mono text-sm font-bold text-slate-900 dark:text-white">
+                {{ formatBdt(resolvePlanBdt(plan)) }}<span class="text-[10px] font-normal text-slate-500">/mo</span>
+              </div>
+              <div class="text-[10px] font-mono text-slate-500">${{ plan.monthly_price_usd }}/mo</div>
+            </div>
+          </button>
+        </div>
+
+        <div
+          v-if="selectedCheckoutPlan && store.subscription?.plan?.slug !== selectedCheckoutPlan.slug && Number(selectedCheckoutPlan.monthly_price_usd) > 0"
+          class="space-y-2 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-3"
+        >
+          <div class="flex items-center justify-between text-[11px]">
+            <span class="font-semibold text-slate-700 dark:text-slate-200">BDT MFS Payment Method</span>
+            <span class="font-mono font-bold text-cyan-600 dark:text-cyan-300">{{ formatBdt(resolvePlanBdt(selectedCheckoutPlan)) }}</span>
+          </div>
+          <div class="grid grid-cols-4 gap-1.5">
+            <button
+              v-for="m in mfsMethods"
+              :key="'mfs-pl-' + m.id"
+              type="button"
+              :disabled="store.checkoutBusy"
+              @click="store.checkoutMethod = m.id; store.checkoutError = ''"
+              class="py-1.5 rounded-lg border text-xs font-semibold transition"
+              :class="store.checkoutMethod === m.id ? 'border-cyan-500 bg-cyan-50 dark:bg-cyan-500/15 text-cyan-700 dark:text-cyan-300' : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300'"
+            >
+              {{ m.label }}
+            </button>
+          </div>
+          <input
+            v-model="store.checkoutTnxid"
+            type="text"
+            :disabled="store.checkoutBusy"
+            placeholder="TrxID (e.g. NAGAD8X92K4)"
+            class="w-full rounded-xl bg-white dark:bg-slate-900 border px-3 py-2 text-xs font-mono uppercase text-slate-900 dark:text-white focus:outline-none"
+            :class="store.checkoutTnxid && !tnxidValid ? 'border-rose-400' : 'border-slate-300 dark:border-slate-700 focus:border-cyan-500'"
+            @input="store.checkoutTnxid = String(store.checkoutTnxid || '').toUpperCase()"
+          />
+        </div>
+
+        <div v-if="selectedCheckoutPlan" class="rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-3 space-y-1.5 text-xs">
+          <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+            <span>Selected Plan</span>
+            <span class="font-semibold text-slate-900 dark:text-white">{{ selectedCheckoutPlan.name }}</span>
+          </div>
+          <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+            <span>Usage Value Added</span>
+            <span class="font-mono font-semibold text-slate-900 dark:text-white">
+              {{ Number(selectedCheckoutPlan.monthly_price_usd) === 0 ? (formatCreditsBdtUsd(0, { compact: true }) + ' (free switch)') : formatCreditsBdtUsd(selectedCheckoutPlan.monthly_credits, { signed: true, compact: true }) }}
+            </span>
+          </div>
+          <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+            <span>Projected Balance</span>
+            <span class="font-mono font-semibold text-emerald-600 dark:text-emerald-400">
+              {{ formatCreditsBdtUsd(projectedPlanBalance, { compact: true }) }}
+            </span>
+          </div>
+          <div class="border-t border-slate-200 dark:border-slate-800 pt-1.5 flex items-center justify-between">
+            <span class="font-medium text-slate-700 dark:text-slate-300">Monthly Charge</span>
+            <span class="font-mono text-sm font-bold text-slate-900 dark:text-white">
+              {{ formatBdt(resolvePlanBdt(selectedCheckoutPlan)) }}/mo
+            </span>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          :disabled="!selectedCheckoutPlan || store.subscription?.plan?.slug === selectedCheckoutPlan?.slug || (Number(selectedCheckoutPlan?.monthly_price_usd || 0) > 0 && !tnxidValid) || store.checkoutBusy"
+          @click="subscribePlan(selectedCheckoutPlan?.slug)"
+          class="w-full py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:opacity-95 text-white text-sm font-semibold disabled:opacity-45 disabled:cursor-not-allowed"
+        >
+          {{ store.checkoutBusy ? 'Activating Plan...' : (!selectedCheckoutPlan || store.subscription?.plan?.slug === selectedCheckoutPlan.slug ? 'Select Another Plan' : (Number(selectedCheckoutPlan.monthly_price_usd) > 0 && !tnxidValid ? 'Enter ' + selectedMfsMeta.label + ' TrxID' : 'Confirm & Activate · ' + formatBdt(resolvePlanBdt(selectedCheckoutPlan)))) }}
+        </button>
+      </div>
+    </div>
+
+    <div v-else class="space-y-4">
+      <div class="rounded-xl bg-emerald-50/70 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/35 p-3.5 flex items-center justify-between gap-2">
+        <div class="min-w-0">
+          <div class="font-display font-bold text-sm text-emerald-900 dark:text-emerald-200">Deposit Complete</div>
+          <div class="text-xs text-emerald-700 dark:text-emerald-300 truncate">{{ store.checkoutReceipt.title }}</div>
+        </div>
+        <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 font-semibold">
+          {{ store.checkoutReceipt.verified ? 'Verified' : 'Recorded' }}
+        </span>
+      </div>
+
+      <div class="rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-3.5 space-y-2 text-xs">
+        <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+          <span>{{ store.checkoutReceipt.kind === 'plan' ? 'Invoice Number' : 'Reference ID' }}</span>
+          <span class="font-mono font-semibold text-slate-900 dark:text-white">{{ store.checkoutReceipt.reference }}</span>
+        </div>
+        <div v-if="store.checkoutReceipt.paymentMethod" class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+          <span>Payment Method</span>
+          <span class="font-semibold text-slate-900 dark:text-white">{{ formatPaymentMethodLabel(store.checkoutReceipt.paymentMethod) }}</span>
+        </div>
+        <div v-if="store.checkoutReceipt.tnxid" class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+          <span>TrxID</span>
+          <span class="font-mono font-semibold text-cyan-600 dark:text-cyan-300">{{ store.checkoutReceipt.tnxid }}</span>
+        </div>
+        <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+          <span>Amount Paid</span>
+          <span class="font-mono font-semibold text-slate-900 dark:text-white">{{ formatBdt(store.checkoutReceipt.amountBdt || usdToBdt(store.checkoutReceipt.amountUsd)) }} (${{ store.checkoutReceipt.amountUsd }})</span>
+        </div>
+        <div class="flex items-center justify-between text-slate-600 dark:text-slate-400">
+          <span>Value Added</span>
+          <span class="font-mono font-semibold text-emerald-600 dark:text-emerald-400">
+            {{ store.checkoutReceipt.creditsAdded > 0 ? formatCreditsBdtUsd(store.checkoutReceipt.creditsAdded, { signed: true, compact: true }) : formatCreditsBdtUsd(0, { compact: true }) }}
+          </span>
+        </div>
+        <div class="border-t border-slate-200 dark:border-slate-800 pt-2 flex items-center justify-between">
+          <span class="font-medium text-slate-700 dark:text-slate-300">Updated Balance</span>
+          <span class="font-mono text-sm font-bold text-cyan-600 dark:text-cyan-300">{{ formatCreditsBdtUsd(store.checkoutReceipt.balanceAfter) }}</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button type="button" @click="closeCheckout" class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:opacity-95 text-white text-xs font-semibold">
+          Done
+        </button>
+        <button
+          type="button"
+          @click="store.activeSection = 'settings'; store.settingsTab = 'billing'; closeCheckout()"
+          class="px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-200"
+        >
+          View Billing
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endverbatim %}

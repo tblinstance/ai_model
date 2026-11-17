@@ -1,0 +1,2 @@
+"""Quota app package."""
+

@@ -1,0 +1,55 @@
+:root {
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --bg-canvas: #f8fafc;
+  --bg-canvas-end: #eef2ff;
+  --bg-glow-1: rgba(6, 182, 212, 0.08);
+  --bg-glow-2: rgba(99, 102, 241, 0.08);
+  --bg-surface: rgba(255, 255, 255, 0.9);
+  --text-canvas: #0f172a;
+  --border-subtle: rgba(148, 163, 184, 0.35);
+  --code-surface-bg: #f1f5f9;
+  --code-surface-border: rgba(14, 116, 144, 0.25);
+  --accent-flash: #06b6d4;
+  --accent-pro: #6366f1;
+  --accent-advance: #a855f7;
+}
+
+:root.dark {
+  --bg-canvas: #070b14;
+  --bg-canvas-end: #0b1120;
+  --bg-glow-1: rgba(6, 182, 212, 0.12);
+  --bg-glow-2: rgba(168, 85, 247, 0.14);
+  --bg-surface: rgba(15, 23, 42, 0.78);
+  --text-canvas: #e2e8f0;
+  --border-subtle: rgba(148, 163, 184, 0.16);
+  --code-surface-bg: #030712;
+  --code-surface-border: rgba(56, 189, 248, 0.2);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  background-image:
+    radial-gradient(circle at 15% 15%, var(--bg-glow-1), transparent 40%),
+    radial-gradient(circle at 85% 20%, var(--bg-glow-2), transparent 42%),
+    linear-gradient(to bottom, var(--bg-canvas), var(--bg-canvas-end));
+  color: var(--text-canvas);
+  min-height: 100vh;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+.glass-panel {
+  background: var(--bg-surface);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle);
+}
+

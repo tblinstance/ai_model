@@ -1,0 +1,420 @@
+{% verbatim %}
+<div
+  v-if="store.sidebarOpen"
+  @click="store.sidebarOpen = false"
+  class="fixed inset-0 bg-black/60 backdrop-blur-xs z-40 lg:hidden"
+  aria-hidden="true"
+></div>
+
+<aside
+  :class="[
+    store.sidebarOpen ? 'flex' : 'hidden lg:flex',
+    store.sidebarCollapsed ? 'lg:w-[4.5rem]' : 'lg:w-64'
+  ]"
+  class="fixed inset-y-0 left-0 z-50 lg:static lg:z-auto w-64 h-full shrink-0 glass-panel border-r border-slate-200 dark:border-slate-800/80 flex-col justify-between overflow-hidden transition-all duration-300"
+>
+  <div class="flex-1 flex flex-col min-h-0">
+    <!-- Sidebar Brand Header -->
+    <div
+      :class="store.sidebarCollapsed ? 'lg:justify-center lg:px-0 px-4 justify-between' : 'px-4 justify-between'"
+      class="h-16 border-b border-slate-200 dark:border-slate-800/80 flex items-center shrink-0"
+    >
+      <a
+        :href="portalHref('overview')"
+        @click="navigatePortal({ section: 'overview' }, $event)"
+        title="tblinc AI Overview"
+        class="flex items-center gap-2.5 min-w-0 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+      >
+        <img
+          src="/static/img/tblinc-ai-icon.svg?v=2026111207"
+          alt="tblinc AI"
+          class="w-9 h-9 rounded-xl shadow-lg shadow-indigo-500/30 shrink-0"
+        />
+        <div v-show="!store.sidebarCollapsed" class="truncate">
+          <div class="font-display font-bold text-slate-900 dark:text-white tracking-tight leading-none">tblinc AI</div>
+        </div>
+      </a>
+      <button
+        type="button"
+        @click="store.sidebarOpen = false"
+        class="lg:hidden p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800"
+        aria-label="Close navigation"
+      >
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+
+    <!-- System Switcher -->
+    <div class="px-3 py-3 border-b border-slate-200 dark:border-slate-800/80 shrink-0">
+      <button
+        type="button"
+        @click.stop="openModelSwitcher"
+        :aria-expanded="store.modelDropdownOpen && !store.sidebarCollapsed"
+        :title="activeModelCard ? activeModelCard.display_name : store.activeTier"
+        :class="store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : ''"
+        class="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-500/15 text-indigo-700 dark:text-indigo-300 font-semibold text-xs hover:bg-indigo-100 dark:hover:bg-indigo-500/25 transition-colors"
+      >
+        <i data-lucide="grid-2x2" class="w-4 h-4 shrink-0"></i>
+        <span v-show="!store.sidebarCollapsed" class="flex-1 text-left truncate">
+          {{ activeModelCard ? activeModelCard.display_name : store.activeTier }}
+        </span>
+        <i
+          v-show="!store.sidebarCollapsed"
+          data-lucide="chevron-down"
+          class="w-4 h-4 shrink-0 transition-transform"
+          :style="{ transform: store.modelDropdownOpen ? 'rotate(180deg)' : '' }"
+        ></i>
+      </button>
+
+      <div v-if="store.modelDropdownOpen && !store.sidebarCollapsed" class="mt-2 flex flex-col gap-0.5">
+        <button
+          v-for="model in store.models"
+          :key="'dd-' + model.tier"
+          type="button"
+          @click="selectProjectModel(model.tier)"
+          class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs transition-colors"
+          :class="store.activeTier === model.tier ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-slate-900 dark:hover:text-white'"
+        >
+          <i
+            :data-lucide="model.tier === 'flash' ? 'zap' : (model.tier === 'pro' ? 'cpu' : 'sparkles')"
+            class="w-4 h-4 shrink-0"
+            :class="model.tier === 'flash' ? 'text-cyan-600 dark:text-cyan-400' : (model.tier === 'pro' ? 'text-indigo-600 dark:text-indigo-400' : 'text-purple-600 dark:text-purple-400')"
+          ></i>
+          <span class="truncate">{{ model.display_name }}</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="flex-1 overflow-y-auto custom-scroll py-3 px-3 space-y-3" aria-label="Control Studio Navigation">
+      <!-- Admin Control Group -->
+      <div class="space-y-1">
+        <div v-show="!store.sidebarCollapsed" class="px-3 pt-1 pb-1 text-[11px] font-mono uppercase tracking-wider text-slate-500">
+          Admin Control
+        </div>
+
+        <a
+          :href="portalHref('overview')"
+          @click="navigatePortal({ section: 'overview' }, $event)"
+          :aria-current="store.activeSection === 'overview' ? 'page' : undefined"
+          title="Overview"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'overview' ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="layout-dashboard" class="w-4 h-4 shrink-0 text-indigo-600 dark:text-indigo-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">Overview</span>
+        </a>
+
+        <a
+          :href="portalHref('admin', { adminTab: 'mfs' })"
+          @click="navigatePortal({ section: 'admin', adminTab: 'mfs' }, $event)"
+          :aria-current="store.activeSection === 'admin' && (store.adminTab || 'mfs') === 'mfs' ? 'page' : undefined"
+          title="MFS Approvals"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'admin' && (store.adminTab || 'mfs') === 'mfs' ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="shield-check" class="w-4 h-4 shrink-0 text-amber-600 dark:text-amber-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">MFS Approvals</span>
+          <span
+            v-if="!store.sidebarCollapsed && store.adminOverview?.summary?.pending_requests > 0"
+            class="ml-auto px-1.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-mono text-[10px] font-bold shrink-0"
+          >
+            {{ store.adminOverview.summary.pending_requests }}
+          </span>
+        </a>
+
+        <a
+          :href="portalHref('admin', { adminTab: 'users' })"
+          @click="navigatePortal({ section: 'admin', adminTab: 'users' }, $event)"
+          :aria-current="store.activeSection === 'admin' && store.adminTab === 'users' ? 'page' : undefined"
+          title="Users & Balances"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'admin' && store.adminTab === 'users' ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="users" class="w-4 h-4 shrink-0 text-cyan-600 dark:text-cyan-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">Users &amp; Balances</span>
+          <span
+            v-if="!store.sidebarCollapsed && store.adminOverview?.summary?.total_users > 0"
+            class="ml-auto px-1.5 py-0.5 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono text-[10px] shrink-0"
+          >
+            {{ store.adminOverview.summary.total_users }}
+          </span>
+        </a>
+
+        <a
+          :href="portalHref('admin', { adminTab: 'invoices' })"
+          @click="navigatePortal({ section: 'admin', adminTab: 'invoices' }, $event)"
+          :aria-current="store.activeSection === 'admin' && store.adminTab === 'invoices' ? 'page' : undefined"
+          title="All Invoices"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'admin' && store.adminTab === 'invoices' ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="file-text" class="w-4 h-4 shrink-0 text-emerald-600 dark:text-emerald-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">All Invoices</span>
+        </a>
+
+        <a
+          :href="portalHref('admin', { adminTab: 'transactions' })"
+          @click="navigatePortal({ section: 'admin', adminTab: 'transactions' }, $event)"
+          :aria-current="store.activeSection === 'admin' && store.adminTab === 'transactions' ? 'page' : undefined"
+          title="All Transactions"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'admin' && store.adminTab === 'transactions' ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="receipt" class="w-4 h-4 shrink-0 text-violet-600 dark:text-purple-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">All Transactions</span>
+        </a>
+
+        <a
+          :href="portalHref('training')"
+          @click="navigatePortal({ section: 'training' }, $event)"
+          :aria-current="store.activeSection === 'training' ? 'page' : undefined"
+          title="Neural Training"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'training' ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="brain-circuit" class="w-4 h-4 shrink-0 text-rose-600 dark:text-pink-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">Neural Training</span>
+          <span
+            v-if="!store.sidebarCollapsed && store.trainingStatus?.dataset_size"
+            class="ml-auto px-1.5 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 font-mono text-[10px] shrink-0"
+          >
+            {{ store.trainingStatus.dataset_size }}
+          </span>
+        </a>
+      </div>
+
+      <!-- tblinc AI Models Group -->
+      <div class="pt-3 border-t border-slate-200/80 dark:border-slate-800/80 space-y-1">
+        <div v-show="!store.sidebarCollapsed" class="px-3 pb-1 text-[11px] font-mono uppercase tracking-wider text-slate-500">
+          tblinc AI Models
+        </div>
+
+        <a
+          v-for="mode in studioModes"
+          :key="'nav-studio-' + mode.id"
+          :href="portalHref('studio', { task: mode.id })"
+          @click="navigatePortal({ section: 'studio', task: mode.id }, $event)"
+          :aria-current="store.activeSection === 'studio' && store.activeTask === mode.id ? 'page' : undefined"
+          :title="mode.label"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'studio' && store.activeTask === mode.id ? 'bg-indigo-50 dark:bg-indigo-600/25 text-indigo-700 dark:text-white border-indigo-200 dark:border-indigo-500/40' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i :data-lucide="mode.icon" class="w-4 h-4 shrink-0" :class="mode.colorClass || 'text-cyan-600 dark:text-cyan-400'"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">{{ mode.label }}</span>
+        </a>
+      </div>
+
+      <!-- Settings Link -->
+      <div class="pt-3 border-t border-slate-200/80 dark:border-slate-800/80 space-y-1">
+        <a
+          :href="portalHref('settings', { settingsTab: 'general' })"
+          @click="navigatePortal({ section: 'settings', settingsTab: 'general' }, $event)"
+          :aria-current="store.activeSection === 'settings' ? 'page' : undefined"
+          title="Settings"
+          class="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition border"
+          :class="[
+            store.sidebarCollapsed ? 'lg:justify-center lg:px-0' : '',
+            store.activeSection === 'settings' ? 'bg-cyan-50 dark:bg-cyan-500/15 text-cyan-700 dark:text-cyan-300 border-cyan-200 dark:border-cyan-500/35' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60 border-transparent'
+          ]"
+        >
+          <i data-lucide="settings" class="w-4 h-4 shrink-0 text-sky-600 dark:text-cyan-400"></i>
+          <span v-show="!store.sidebarCollapsed" class="truncate">Settings</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="p-3 border-t border-slate-200 dark:border-slate-800/80 shrink-0">
+    <button
+      v-if="store.sidebarCollapsed"
+      type="button"
+      @click="toggleSidebar"
+      :title="'Active Tier: ' + store.activeTier"
+      class="hidden lg:flex w-full py-2 rounded-xl bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 items-center justify-center text-cyan-600 dark:text-cyan-400 hover:bg-slate-200 dark:hover:bg-slate-800/80 transition"
+    >
+      <i data-lucide="gauge" class="w-4 h-4"></i>
+    </button>
+    <div v-show="!store.sidebarCollapsed" class="rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 p-3.5 space-y-2">
+      <div class="flex items-center justify-between text-xs">
+        <span class="text-slate-600 dark:text-slate-400 flex items-center gap-1.5">
+          <i data-lucide="gauge" class="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400"></i>
+          <span>Active Tier</span>
+        </span>
+        <span class="font-mono uppercase text-[11px] px-2 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-cyan-700 dark:text-cyan-300">
+          {{ store.activeTier }}
+        </span>
+      </div>
+
+      <div v-if="store.authenticated && store.quota" class="space-y-1.5">
+        <div class="flex justify-between items-baseline gap-2 text-[11px] font-mono">
+          <span class="text-slate-600 dark:text-slate-400">Balance</span>
+          <span class="text-slate-900 dark:text-white font-medium truncate">{{ formatCreditsBdtUsd(store.quota.remaining_credits, { compact: true }) }}</span>
+        </div>
+        <div class="h-1.5 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div
+            class="h-full bg-gradient-to-r from-cyan-500 to-purple-500 transition-all duration-300"
+            :style="{ width: Math.min(100, Math.round((store.quota.remaining_credits / Math.max(1, store.quota.total_credits)) * 100)) + '%' }"
+          ></div>
+        </div>
+      </div>
+      <div v-else class="space-y-2.5">
+        <p class="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
+          Login or sign up to sync quota, billing plans, and ledger history.
+        </p>
+        <div class="grid grid-cols-2 gap-2">
+          <button
+            type="button"
+            @click="openAuth('login'); store.sidebarOpen = false"
+            class="py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 text-xs font-semibold"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            @click="openAuth('register'); store.sidebarOpen = false"
+            class="py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Avatar & More Options Footer -->
+    <div v-if="store.authenticated && store.user" class="relative mt-2.5 pt-2 border-t border-slate-200/80 dark:border-slate-800/80" @click.stop>
+      <div
+        :class="[
+          store.showSidebarUserMenu ? 'bg-slate-100 dark:bg-slate-800' : 'hover:bg-slate-100 dark:hover:bg-slate-800/70',
+          store.sidebarCollapsed ? 'justify-center' : 'justify-between'
+        ]"
+        class="w-full flex items-center gap-2 rounded-xl p-1.5 transition"
+      >
+        <a
+          :href="portalHref('settings', { settingsTab: 'profiles' })"
+          @click="navigatePortal({ section: 'settings', settingsTab: 'profiles' }, $event)"
+          :title="'Open My Profile (@' + store.user.username + ')'"
+          class="flex items-center gap-2.5 min-w-0 group cursor-pointer text-left"
+        >
+          <img
+            v-if="store.user.avatar"
+            :src="store.user.avatar"
+            :alt="store.user.username"
+            class="w-8 h-8 rounded-full object-cover shrink-0 shadow-xs ring-1 ring-cyan-500/30 group-hover:ring-cyan-500 transition"
+          />
+          <div v-else class="w-8 h-8 rounded-full bg-gradient-to-tr from-indigo-500 via-cyan-500 to-purple-600 text-white font-display font-bold text-xs flex items-center justify-center shrink-0 shadow-xs group-hover:opacity-90 transition">
+            {{ (store.user.display_name || store.user.username || 'U').slice(0, 2).toUpperCase() }}
+          </div>
+          <div v-show="!store.sidebarCollapsed" class="text-left min-w-0 pr-1">
+            <div class="text-xs font-semibold text-slate-800 dark:text-slate-100 truncate group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition">
+              {{ store.user.display_name || store.user.username }}
+            </div>
+            <div class="text-[10px] font-mono text-slate-500 dark:text-slate-400 truncate">
+              @{{ store.user.username }}
+            </div>
+          </div>
+        </a>
+        <button
+          type="button"
+          @click="store.showSidebarUserMenu = !store.showSidebarUserMenu"
+          title="More account options"
+          class="p-1 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+        >
+          <i data-lucide="more-vertical" class="w-4 h-4 shrink-0"></i>
+        </button>
+      </div>
+
+      <div
+        v-if="store.showSidebarUserMenu"
+        :class="store.sidebarCollapsed ? 'left-full ml-3 bottom-0' : 'bottom-full left-0 mb-2'"
+        class="absolute w-56 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl p-2 space-y-1 z-50"
+      >
+        <a
+          :href="portalHref('settings', { settingsTab: 'profiles' })"
+          @click="navigatePortal({ section: 'settings', settingsTab: 'profiles' }, $event); store.showSidebarUserMenu = false"
+          class="px-3 py-2 border-b border-slate-200/80 dark:border-slate-800/80 mb-1 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition block"
+          title="View My Profile"
+        >
+          <div class="flex items-center gap-2">
+            <img
+              v-if="store.user.avatar"
+              :src="store.user.avatar"
+              :alt="store.user.username"
+              class="w-7 h-7 rounded-full object-cover ring-1 ring-cyan-500/40 shrink-0"
+            />
+            <div v-else class="w-7 h-7 rounded-full bg-gradient-to-tr from-indigo-500 via-cyan-500 to-purple-600 text-white font-display font-bold text-[10px] flex items-center justify-center shrink-0">
+              {{ (store.user.display_name || store.user.username || 'U').slice(0, 2).toUpperCase() }}
+            </div>
+            <div class="min-w-0">
+              <div class="font-semibold text-xs text-slate-900 dark:text-white truncate">
+                {{ store.user.display_name || store.user.username }}
+              </div>
+              <div class="text-[10px] font-mono text-slate-500 dark:text-slate-400 truncate">
+                @{{ store.user.username }} · {{ store.user.plan_name || 'Free' }}
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          :href="portalHref('settings', { settingsTab: 'profiles' })"
+          @click="navigatePortal({ section: 'settings', settingsTab: 'profiles' }, $event); store.showSidebarUserMenu = false"
+          class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+        >
+          <i data-lucide="user" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i>
+          <span>My Profile</span>
+        </a>
+
+        <a
+          :href="portalHref('settings', { settingsTab: 'billing' })"
+          @click="navigatePortal({ section: 'settings', settingsTab: 'billing' }, $event); store.showSidebarUserMenu = false"
+          class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+        >
+          <i data-lucide="coins" class="w-4 h-4 text-amber-500"></i>
+          <span>Billing &amp; Quota</span>
+        </a>
+
+        <a
+          :href="portalHref('settings', { settingsTab: 'general' })"
+          @click="navigatePortal({ section: 'settings', settingsTab: 'general' }, $event); store.showSidebarUserMenu = false"
+          class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+        >
+          <i data-lucide="settings" class="w-4 h-4 text-slate-500"></i>
+          <span>Settings</span>
+        </a>
+
+        <div class="border-t border-slate-200/80 dark:border-slate-800/80 my-1"></div>
+
+        <button
+          type="button"
+          @click="logout(); store.showSidebarUserMenu = false"
+          class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/10 transition"
+        >
+          <i data-lucide="log-out" class="w-4 h-4"></i>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</aside>
+{% endverbatim %}

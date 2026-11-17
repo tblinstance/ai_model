@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{{ portal_route|json_script:"portal-route-data" }}
+<script>
+  window.__FASTAPI_BASE_URL__ = "{{ fastapi_base_url|escapejs }}";
+  (function () {
+    var el = document.getElementById("portal-route-data");
+    try {
+      window.__PORTAL_ROUTE__ = el ? JSON.parse(el.textContent || "{}") : {};
+    } catch (_e) {
+      window.__PORTAL_ROUTE__ = {};
+    }
+  })();
+</script>
+
+<div id="app" v-cloak class="min-h-screen w-full">
+  <!-- Fullscreen Auth Gateway (`/` & `/login/` & `/register/`) -->
+  <div v-if="!store.authenticated" class="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 relative">
+    <button
+      type="button"
+      @click="toggleTheme"
+      title="Toggle theme"
+      aria-label="Toggle theme"
+      class="fixed top-4 right-4 p-2 rounded-xl bg-white/85 dark:bg-slate-900/85 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shadow-sm"
+    >
+      <i :data-lucide="store.theme === 'dark' ? 'sun' : 'moon'" class="w-4 h-4"></i>
+    </button>
+
+    <div class="w-full max-w-md space-y-4">
+      <div class="text-center space-y-2">
+        <img
+          src="{% static 'img/tblinc-ai-icon.svg' %}"
+          alt="tblinc AI"
+          class="w-12 h-12 rounded-2xl shadow-lg shadow-indigo-500/30 mx-auto"
+        />
+        <div class="font-display text-xl font-bold text-slate-900 dark:text-white tracking-tight">
+          tblinc AI
+        </div>
+        {% verbatim %}
+        <p class="text-xs text-slate-600 dark:text-slate-400">
+          Admin Sign In for tblinc AI Console
+        </p>
+        {% endverbatim %}
+      </div>
+
+      <div class="glass-panel rounded-2xl p-6 space-y-4 border border-slate-200 dark:border-slate-700/80 shadow-2xl">
+        {% verbatim %}
+        <div v-if="store.notice" class="rounded-xl bg-emerald-50 dark:bg-emerald-500/15 border border-emerald-200 dark:border-emerald-500/40 px-3.5 py-2 text-xs text-emerald-700 dark:text-emerald-200">
+          {{ store.notice }}
+        </div>
+        {% endverbatim %}
+        {% include "partials/auth_card.html" %}
+      </div>
+
+      {% verbatim %}
+      <p class="text-center text-[11px] font-mono text-slate-500 dark:text-slate-500">
+        Redirects to <span class="text-cyan-600 dark:text-cyan-400">{{ store.postAuthPath || '/control/' }}</span> after authentication
+      </p>
+      {% endverbatim %}
+    </div>
+  </div>
+
+  <!-- Authenticated Control Studio (`/control/...`) -->
+  <div v-else class="min-h-screen lg:h-screen lg:overflow-hidden w-full flex">
+    {% include "partials/sidenav.html" %}
+
+    <div class="flex-1 flex flex-col min-w-0 lg:h-screen lg:overflow-hidden">
+      {% include "partials/navbar.html" %}
+
+      {% verbatim %}
+      <main class="w-full flex-1 min-w-0 overflow-y-auto px-4 sm:px-6 py-6">
+        <div v-if="store.error" class="mb-4 rounded-xl bg-rose-50 dark:bg-rose-500/15 border border-rose-200 dark:border-rose-500/40 px-4 py-2.5 text-xs text-rose-700 dark:text-rose-200 flex items-center justify-between">
+          <span>{{ store.error }}</span>
+          <button @click="store.error = ''" class="text-rose-600 dark:text-rose-300 hover:underline">Dismiss</button>
+        </div>
+        <div v-if="store.notice" class="mb-4 rounded-xl bg-emerald-50 dark:bg-emerald-500/15 border border-emerald-200 dark:border-emerald-500/40 px-4 py-2.5 text-xs text-emerald-700 dark:text-emerald-200 flex items-center justify-between">
+          <span>{{ store.notice }}</span>
+          <button @click="store.notice = ''" class="text-emerald-600 dark:text-emerald-300 hover:underline">Dismiss</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div
+            v-if="store.activeSection === 'overview' || store.activeSection === 'studio'"
+            :class="store.activeSection === 'overview' ? 'lg:col-span-8' : 'lg:col-span-12'"
+          >
+            <model-selector :store="store" :on-train-engine="trainEngine" :on-train-all="trainAll"></model-selector>
+            <studio-workspace
+              :store="store"
+              :on-run-task="runTask"
+              :on-run-agent="runAgent"
+              :on-select-conversation="selectConversation"
+              :on-new-conversation="startNewConversation"
+              :on-delete-conversation="deleteConversation"
+              :on-attach-media="attachStudioMedia"
+            ></studio-workspace>
+          </div>
+          <div
+            v-if="store.activeSection === 'overview'"
+            class="lg:col-span-4"
+          >
+            <billing-quota-panel
+              :store="store"
+              :on-subscribe="(slug) => openCheckout('plans', slug)"
+              :on-open-topup="() => openCheckout('credits')"
+              :on-update-profile="updateProfile"
+              :on-verify-account="verifyAccount"
+            ></billing-quota-panel>
+          </div>
+          <div
+            v-if="store.activeSection === 'settings'"
+            class="lg:col-span-12"
+          >
+            <settings-panel
+              :store="store"
+              :on-toggle-theme="toggleTheme"
+              :on-toggle-sidebar="toggleSidebar"
+              :on-update-profile="updateProfile"
+              :on-change-password="changePassword"
+              :on-subscribe="(slug) => openCheckout('plans', slug)"
+              :on-open-topup="() => openCheckout('credits')"
+              :on-verify-account="verifyAccount"
+              :on-create-secret-key="createSecretKey"
+              :on-toggle-secret-key="toggleSecretKey"
+              :on-revoke-secret-key="revokeSecretKey"
+              :on-create-agent="createAgent"
+              :on-run-agent="runAgent"
+            ></settings-panel>
+          </div>
+          <div
+            v-if="store.activeSection === 'training'"
+            class="lg:col-span-12"
+          >
+            <training-panel
+              :store="store"
+              :on-train-engine="trainEngine"
+              :on-train-all="trainAll"
+              :on-reset-training="resetTrainingEngine"
+              :on-refresh-training="loadTrainingData"
+              :on-create-sample="createTrainingSample"
+              :on-bulk-upload-json="bulkUploadTrainingJson"
+              :on-delete-sample="deleteTrainingSample"
+              :on-evaluate-prompt="evaluateTrainingPrompt"
+            ></training-panel>
+          </div>
+          <div
+            v-if="store.activeSection === 'overview' || store.activeSection === 'admin'"
+            class="lg:col-span-12"
+          >
+            <admin-control-panel
+              :store="store"
+              :on-refresh-admin="loadAdminOverview"
+              :on-approve-mfs="approveMfsRequest"
+              :on-reject-mfs="rejectMfsRequest"
+              :on-grant-credits="adminGrantCredits"
+              :on-clear-balance="adminClearBalance"
+              :on-switch-user-plan="adminSwitchUserPlan"
+            ></admin-control-panel>
+          </div>
+        </div>
+      </main>
+      {% endverbatim %}
+    </div>
+
+    {% include "partials/modals.html" %}
+  </div>
+</div>
+
+<script src="{% static 'js/api.js' %}?v=2026111206"></script>
+<script src="{% static 'js/motion-helpers.js' %}?v=2026111201"></script>
+<script src="{% static 'js/store.js' %}?v=2026111207"></script>
+<script src="{% static 'js/components/ModelSelector.js' %}?v=2026111207"></script>
+<script src="{% static 'js/components/StudioWorkspace.js' %}?v=2026111209"></script>
+<script src="{% static 'js/components/TrainingPanel.js' %}?v=2026111207"></script>
+<script src="{% static 'js/components/BillingQuotaPanel.js' %}?v=2026111208"></script>
+<script src="{% static 'js/components/ProfilePanel.js' %}?v=2026111203"></script>
+<script src="{% static 'js/components/SettingsPanel.js' %}?v=2026111207"></script>
+<script src="{% static 'js/components/AdminControlPanel.js' %}?v=2026111206"></script>
+<script src="{% static 'js/app.js' %}?v=2026111209"></script>
+{% endblock %}

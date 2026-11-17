@@ -1,0 +1,182 @@
+[
+  {
+    "prompt": "django install tutorial",
+    "response": "#!/usr/bin/env bash\n# Django + Django REST Framework Install & Bootstrap Tutorial\nset -euo pipefail\n\n# 1. Create and activate a Python virtual environment\npython3 -m venv .venv\nsource .venv/bin/activate\n\n# 2. Upgrade pip and install Django + DRF\npython -m pip install --upgrade pip\npip install django djangorestframework\n\n# 3. Verify Django version\npython -m django --version\n\n# 4. Scaffold project ('config') and first app ('core')\ndjango-admin startproject config .\npython manage.py startapp core\n\n# 5. Apply initial migrations & run system checks\npython manage.py migrate\npython manage.py check\n\n# 6. Start local development server (http://127.0.0.1:8000)\npython manage.py runserver 127.0.0.1:8000\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "how to install django step by step tutorial",
+    "response": "#!/usr/bin/env bash\n# Django + Django REST Framework Install & Bootstrap Tutorial\nset -euo pipefail\n\n# 1. Create and activate a Python virtual environment\npython3 -m venv .venv\nsource .venv/bin/activate\n\n# 2. Upgrade pip and install Django + DRF\npython -m pip install --upgrade pip\npip install django djangorestframework\n\n# 3. Verify Django version\npython -m django --version\n\n# 4. Scaffold project ('config') and first app ('core')\ndjango-admin startproject config .\npython manage.py startapp core\n\n# 5. Apply initial migrations & run system checks\npython manage.py migrate\npython manage.py check\n\n# 6. Start local development server (http://127.0.0.1:8000)\npython manage.py runserver 127.0.0.1:8000\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "bash script install django drf startproject migrate runserver",
+    "response": "#!/usr/bin/env bash\n# Django + Django REST Framework Install & Bootstrap Tutorial\nset -euo pipefail\n\n# 1. Create and activate a Python virtual environment\npython3 -m venv .venv\nsource .venv/bin/activate\n\n# 2. Upgrade pip and install Django + DRF\npython -m pip install --upgrade pip\npip install django djangorestframework\n\n# 3. Verify Django version\npython -m django --version\n\n# 4. Scaffold project ('config') and first app ('core')\ndjango-admin startproject config .\npython manage.py startapp core\n\n# 5. Apply initial migrations & run system checks\npython manage.py migrate\npython manage.py check\n\n# 6. Start local development server (http://127.0.0.1:8000)\npython manage.py runserver 127.0.0.1:8000\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "django setup virtualenv pip install create app",
+    "response": "#!/usr/bin/env bash\n# Django + Django REST Framework Install & Bootstrap Tutorial\nset -euo pipefail\n\n# 1. Create and activate a Python virtual environment\npython3 -m venv .venv\nsource .venv/bin/activate\n\n# 2. Upgrade pip and install Django + DRF\npython -m pip install --upgrade pip\npip install django djangorestframework\n\n# 3. Verify Django version\npython -m django --version\n\n# 4. Scaffold project ('config') and first app ('core')\ndjango-admin startproject config .\npython manage.py startapp core\n\n# 5. Apply initial migrations & run system checks\npython manage.py migrate\npython manage.py check\n\n# 6. Start local development server (http://127.0.0.1:8000)\npython manage.py runserver 127.0.0.1:8000\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "install django rest framework ubuntu python venv",
+    "response": "#!/usr/bin/env bash\n# Django + Django REST Framework Install & Bootstrap Tutorial\nset -euo pipefail\n\n# 1. Create and activate a Python virtual environment\npython3 -m venv .venv\nsource .venv/bin/activate\n\n# 2. Upgrade pip and install Django + DRF\npython -m pip install --upgrade pip\npip install django djangorestframework\n\n# 3. Verify Django version\npython -m django --version\n\n# 4. Scaffold project ('config') and first app ('core')\ndjango-admin startproject config .\npython manage.py startapp core\n\n# 5. Apply initial migrations & run system checks\npython manage.py migrate\npython manage.py check\n\n# 6. Start local development server (http://127.0.0.1:8000)\npython manage.py runserver 127.0.0.1:8000\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "fastapi install tutorial",
+    "response": "#!/usr/bin/env bash\n# FastAPI + Uvicorn Quickstart Install Tutorial\nset -euo pipefail\n\npython3 -m venv .venv\nsource .venv/bin/activate\n\npython -m pip install --upgrade pip\npip install fastapi uvicorn[standard]\n\ncat <<'EOF' > main.py\nfrom fastapi import FastAPI\n\napp = FastAPI(title=\"AI API\")\n\n\n@app.get(\"/health\")\nasync def health() -> dict[str, str]:\n    return {\"status\": \"ok\"}\nEOF\n\nuvicorn main:app --host 127.0.0.1 --port 8000 --reload\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "how to install fastapi uvicorn tutorial",
+    "response": "#!/usr/bin/env bash\n# FastAPI + Uvicorn Quickstart Install Tutorial\nset -euo pipefail\n\npython3 -m venv .venv\nsource .venv/bin/activate\n\npython -m pip install --upgrade pip\npip install fastapi uvicorn[standard]\n\ncat <<'EOF' > main.py\nfrom fastapi import FastAPI\n\napp = FastAPI(title=\"AI API\")\n\n\n@app.get(\"/health\")\nasync def health() -> dict[str, str]:\n    return {\"status\": \"ok\"}\nEOF\n\nuvicorn main:app --host 127.0.0.1 --port 8000 --reload\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "setup fastapi venv run uvicorn reload",
+    "response": "#!/usr/bin/env bash\n# FastAPI + Uvicorn Quickstart Install Tutorial\nset -euo pipefail\n\npython3 -m venv .venv\nsource .venv/bin/activate\n\npython -m pip install --upgrade pip\npip install fastapi uvicorn[standard]\n\ncat <<'EOF' > main.py\nfrom fastapi import FastAPI\n\napp = FastAPI(title=\"AI API\")\n\n\n@app.get(\"/health\")\nasync def health() -> dict[str, str]:\n    return {\"status\": \"ok\"}\nEOF\n\nuvicorn main:app --host 127.0.0.1 --port 8000 --reload\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "react vite typescript install tutorial",
+    "response": "#!/usr/bin/env bash\n# React + TypeScript + Vite Install Tutorial\nset -euo pipefail\n\nnode -v\nnpm -v\n\nnpm create vite@latest my-app -- --template react-ts\ncd my-app\nnpm install\nnpm run build\nnpm run dev\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "setup react typescript tailwind vite project",
+    "response": "#!/usr/bin/env bash\n# React + TypeScript + Vite Install Tutorial\nset -euo pipefail\n\nnode -v\nnpm -v\n\nnpm create vite@latest my-app -- --template react-ts\ncd my-app\nnpm install\nnpm run build\nnpm run dev\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "how to install react vite frontend dev server",
+    "response": "#!/usr/bin/env bash\n# React + TypeScript + Vite Install Tutorial\nset -euo pipefail\n\nnode -v\nnpm -v\n\nnpm create vite@latest my-app -- --template react-ts\ncd my-app\nnpm install\nnpm run build\nnpm run dev\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "postgresql install tutorial",
+    "response": "#!/usr/bin/env bash\n# PostgreSQL Installation & Database Setup Tutorial\nset -euo pipefail\n\nsudo apt-get update\nsudo apt-get install -y postgresql postgresql-contrib\nsudo systemctl enable --now postgresql\n\nsudo -u postgres createuser --superuser app_user || true\nsudo -u postgres createdb -O app_user app_db || true\n\npsql -h 127.0.0.1 -U app_user -d app_db -c \"SELECT version();\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "install postgres createuser createdb ubuntu linux",
+    "response": "#!/usr/bin/env bash\n# PostgreSQL Installation & Database Setup Tutorial\nset -euo pipefail\n\nsudo apt-get update\nsudo apt-get install -y postgresql postgresql-contrib\nsudo systemctl enable --now postgresql\n\nsudo -u postgres createuser --superuser app_user || true\nsudo -u postgres createdb -O app_user app_db || true\n\npsql -h 127.0.0.1 -U app_user -d app_db -c \"SELECT version();\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "postgresql setup psql database role tutorial",
+    "response": "#!/usr/bin/env bash\n# PostgreSQL Installation & Database Setup Tutorial\nset -euo pipefail\n\nsudo apt-get update\nsudo apt-get install -y postgresql postgresql-contrib\nsudo systemctl enable --now postgresql\n\nsudo -u postgres createuser --superuser app_user || true\nsudo -u postgres createdb -O app_user app_db || true\n\npsql -h 127.0.0.1 -U app_user -d app_db -c \"SELECT version();\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "pytorch tensorflow keras install tutorial",
+    "response": "#!/usr/bin/env bash\n# Python ML + Media Engine Install Tutorial\nset -euo pipefail\n\npython3 -m venv .venv\nsource .venv/bin/activate\n\npython -m pip install --upgrade pip\npip install numpy torch tensorflow keras pillow matplotlib imageio-ffmpeg\n\npython -c \"import numpy, torch, tensorflow, keras, PIL, matplotlib, imageio_ffmpeg; print('OK:', numpy.__version__, torch.__version__, matplotlib.__version__)\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "install numpy pillow matplotlib imageio-ffmpeg python ai stack",
+    "response": "#!/usr/bin/env bash\n# Python ML + Media Engine Install Tutorial\nset -euo pipefail\n\npython3 -m venv .venv\nsource .venv/bin/activate\n\npython -m pip install --upgrade pip\npip install numpy torch tensorflow keras pillow matplotlib imageio-ffmpeg\n\npython -c \"import numpy, torch, tensorflow, keras, PIL, matplotlib, imageio_ffmpeg; print('OK:', numpy.__version__, torch.__version__, matplotlib.__version__)\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "setup ml environment poetry python packages verify",
+    "response": "#!/usr/bin/env bash\n# Python ML + Media Engine Install Tutorial\nset -euo pipefail\n\npython3 -m venv .venv\nsource .venv/bin/activate\n\npython -m pip install --upgrade pip\npip install numpy torch tensorflow keras pillow matplotlib imageio-ffmpeg\n\npython -c \"import numpy, torch, tensorflow, keras, PIL, matplotlib, imageio_ffmpeg; print('OK:', numpy.__version__, torch.__version__, matplotlib.__version__)\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "docker compose install build tutorial",
+    "response": "#!/usr/bin/env bash\n# Docker Compose Build & Launch Tutorial\nset -euo pipefail\n\ndocker --version\ndocker compose version\n\ndocker compose build --no-cache\ndocker compose up -d\ndocker compose ps\ndocker compose logs --tail=50\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "bash script docker build up logs healthcheck",
+    "response": "#!/usr/bin/env bash\n# Docker Compose Build & Launch Tutorial\nset -euo pipefail\n\ndocker --version\ndocker compose version\n\ndocker compose build --no-cache\ndocker compose up -d\ndocker compose ps\ndocker compose logs --tail=50\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "dockerize web api postgres compose up",
+    "response": "#!/usr/bin/env bash\n# Docker Compose Build & Launch Tutorial\nset -euo pipefail\n\ndocker --version\ndocker compose version\n\ndocker compose build --no-cache\ndocker compose up -d\ndocker compose ps\ndocker compose logs --tail=50\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "ffmpeg h264 mp4 probe inspect trim convert command",
+    "response": "#!/usr/bin/env bash\n# FFmpeg H.264 MP4 Encode & Probe Utility\nset -euo pipefail\n\nINPUT=\"${1:-input.mov}\"\nOUTPUT=\"${2:-output_faststart.mp4}\"\n\nffmpeg -y -i \"$INPUT\" \\\n  -c:v libx264 -preset fast -crf 23 -pix_fmt yuv420p \\\n  -movflags +faststart \"$OUTPUT\"\n\nffmpeg -i \"$OUTPUT\" 2>&1 | grep -E \"Duration:|Video:\" || true\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "bash script ffmpeg encode yuv420p faststart mp4",
+    "response": "#!/usr/bin/env bash\n# FFmpeg H.264 MP4 Encode & Probe Utility\nset -euo pipefail\n\nINPUT=\"${1:-input.mov}\"\nOUTPUT=\"${2:-output_faststart.mp4}\"\n\nffmpeg -y -i \"$INPUT\" \\\n  -c:v libx264 -preset fast -crf 23 -pix_fmt yuv420p \\\n  -movflags +faststart \"$OUTPUT\"\n\nffmpeg -i \"$OUTPUT\" 2>&1 | grep -E \"Duration:|Video:\" || true\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "how to probe mp4 duration codec with ffmpeg",
+    "response": "#!/usr/bin/env bash\n# FFmpeg H.264 MP4 Encode & Probe Utility\nset -euo pipefail\n\nINPUT=\"${1:-input.mov}\"\nOUTPUT=\"${2:-output_faststart.mp4}\"\n\nffmpeg -y -i \"$INPUT\" \\\n  -c:v libx264 -preset fast -crf 23 -pix_fmt yuv420p \\\n  -movflags +faststart \"$OUTPUT\"\n\nffmpeg -i \"$OUTPUT\" 2>&1 | grep -E \"Duration:|Video:\" || true\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "make train restart pkill start health check bash script",
+    "response": "#!/usr/bin/env bash\n# Train AI Engine + Reload Services + Verify Health\nset -euo pipefail\n\nmake train\nmake pkill && make start\n\ncurl -fsS -m 5 http://127.0.0.1:8001/api/v1/health | python3 -m json.tool\ncurl -fsS -m 5 http://127.0.0.1:8000/api/v1/health/ | python3 -m json.tool\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "train all tiers restart fastapi django vite curl health",
+    "response": "#!/usr/bin/env bash\n# Train AI Engine + Reload Services + Verify Health\nset -euo pipefail\n\nmake train\nmake pkill && make start\n\ncurl -fsS -m 5 http://127.0.0.1:8001/api/v1/health | python3 -m json.tool\ncurl -fsS -m 5 http://127.0.0.1:8000/api/v1/health/ | python3 -m json.tool\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "pg_dump postgresql backup restore bash command",
+    "response": "#!/usr/bin/env bash\n# Train AI Engine + Reload Services + Verify Health\nset -euo pipefail\n\nmake train\nmake pkill && make start\n\ncurl -fsS -m 5 http://127.0.0.1:8001/api/v1/health | python3 -m json.tool\ncurl -fsS -m 5 http://127.0.0.1:8000/api/v1/health/ | python3 -m json.tool\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "poetry virtualenv install python pyproject tutorial bash",
+    "response": "#!/usr/bin/env bash\n# Poetry Project & Virtualenv Tutorial\nset -euo pipefail\n\npoetry --version\npoetry env use python3\npoetry install --no-interaction\npoetry add imageio-ffmpeg matplotlib\npoetry run python -c \"import django, fastapi; print('Env ready')\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "how to install poetry dependencies manage virtual environment",
+    "response": "#!/usr/bin/env bash\n# Poetry Project & Virtualenv Tutorial\nset -euo pipefail\n\npoetry --version\npoetry env use python3\npoetry install --no-interaction\npoetry add imageio-ffmpeg matplotlib\npoetry run python -c \"import django, fastapi; print('Env ready')\"\n",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "write bash script train all tiers and restart fastapi django servers",
+    "response": "#!/usr/bin/env bash\nset -euo pipefail\n\nmake train\nmake pkill && make start\ncurl -fsS -m 5 http://127.0.0.1:8001/api/v1/health | python3 -m json.tool",
+    "intent": "code_bash",
+    "task": "code"
+  },
+  {
+    "prompt": "write bash script validate static js files build frontend and run django check",
+    "response": "#!/usr/bin/env bash\nset -euo pipefail\n\nfind src/ai-model/backend/static/js -name '*.js' -exec node --check {} +\nnpm --prefix src/ai-model/frontend run build\npython src/ai-model/backend/manage.py check",
+    "intent": "code_bash",
+    "task": "code"
+  }
+]

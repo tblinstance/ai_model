@@ -1,0 +1,77 @@
+Question: What is the AI-Model platform architecture?
+Answer: The AI-Model platform is a multi-tier, multi-backend neural execution engine built with Django, FastAPI, PostGraphile, Vite React, and PostgreSQL. It supports Flash, Pro, and Advance tiers across NumPy, PyTorch, TensorFlow, and Keras backends for chat, code generation, SVG image synthesis, and H.264 video rendering.
+
+Question: How does the hybrid backend work in ai_engine?
+Answer: The hybrid backend automatically routes incoming tasks across NumPy, PyTorch, TensorFlow, and Keras depending on modality, latency requirements, and hardware availability, maximizing throughput while minimizing compute overhead.
+
+Question: How can I train the ai_engine on large text corpora?
+Answer: You can train the ai_engine on raw text files using the command `python manage.py train_ai_engine --task chat --txt <path_to_file.txt>` or using `make train-text TXT=<path_to_file.txt>`. The streaming parser handles large text files efficiently by extracting Q&A pairs, paragraph blocks, and contextual sliding windows.
+
+Question: What video formats does AI-Model generate?
+Answer: The platform synthesizes H.264 MP4 videos using vectorized frame generators and FFmpeg encoding with customized color maps, particle physics, geometric sweeps, and cellular automata.
+
+Question: How do user avatars work in the AI-Model platform?
+Answer: User avatars can be uploaded from the My Profile view. The frontend optimizes images to high-quality WebP or JPEG format, updates the PostgreSQL database via REST API, and displays the avatar across the top navigation bar, sidebar, and profile cards.
+
+Question: What is 1-billion token scale training and why is data streaming essential?
+Answer: One-billion token scale training refers to processing 1,000,000,000 subword tokens (equivalent to roughly 750 million words or 4 to 5 GB of raw unstructured text) through neural network layers. Loading a dataset of this magnitude into resident system memory (RAM) would cause out-of-memory (OOM) fatal errors. Therefore, modern training architectures rely on chunked data streaming generators, memory-mapped files (mmap), and lazy token batching where samples are read, tokenized, and fed in mini-batches on the fly.
+
+Question: How does gradient accumulation enable training large models on constrained hardware?
+Answer: Gradient accumulation divides a large effective batch size into smaller micro-batches that fit within GPU or host RAM. The model performs forward and backward passes across consecutive micro-batches without updating the parameters, accumulating gradients into the gradient tensors: W.grad += dL/dW. The optimizer step is executed only once every K micro-batches, and gradients are then zeroed: W = W - lr * W.grad; W.grad.zero_(). This yields mathematically identical weight updates to large-batch SGD without memory exhaustion.
+
+Question: What is the mathematical formulation of Scaled Dot-Product Attention in Transformer models?
+Answer: The Scaled Dot-Product Attention equation is: Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V, where Q represents Queries, K represents Keys, and V represents Values. The scaling factor 1/sqrt(d_k) stabilizes the dot product magnitudes for large embedding dimensions d_k, preventing the softmax function from entering regions with vanishing gradients.
+
+Question: How does Multi-Head Attention extend single attention mechanisms?
+Answer: Multi-Head Attention projects Queries, Keys, and Values into h distinct lower-dimensional subspaces using learnable linear projection matrices: Q_i = Q * W_i^Q, K_i = K * W_i^K, V_i = V * W_i^V. Each attention head computes attention in parallel: head_i = Attention(Q_i, K_i, V_i). The outputs of all heads are concatenated and projected through a final output matrix: MultiHead(Q, K, V) = Concat(head_1, ..., head_h) * W^O. This allows the model to jointly attend to information from different representation subspaces at different positions.
+
+Question: What are Rotary Position Embeddings (RoPE) in modern large language models?
+Answer: Rotary Position Embeddings (RoPE) encode relative position information by rotating the query and key representations in a complex plane. Instead of adding absolute positional embeddings to token vectors, RoPE applies an orthogonal rotation matrix R_theta,m to the 2D slices of query and key vectors at sequence position m. Because the inner product between rotated vectors depends solely on the relative distance (m - n), RoPE generalizes effectively across extended context windows and preserves positional decay.
+
+Question: How does KV-Caching optimize auto-regressive generation latency?
+Answer: In auto-regressive token generation, previous tokens are fixed, and only one new token is predicted per step. Without caching, the model would recompute Key and Value matrices for all preceding tokens at quadratic complexity O(T^2). KV-Caching stores the computed Keys and Values in memory across transformer layers. During subsequent generation steps, only the single new token's Query, Key, and Value are computed, and the new Key and Value are appended to the cache, reducing per-token decoding complexity to O(T).
+
+Question: What is the difference between Pre-LayerNorm and Post-LayerNorm in deep transformers?
+Answer: In original Post-LayerNorm transformers, normalization is applied after residual addition: x_{l+1} = LayerNorm(x_l + Sublayer(x_l)). In deep networks, this causes gradient instability and necessitates warm-up schedules. Modern architectures adopt Pre-LayerNorm: x_{l+1} = x_l + Sublayer(LayerNorm(x_l)). This provides a direct, uninhibited identity highway for gradients during backpropagation, enabling stable training of 1-billion to 70-billion parameter models without training divergence.
+
+Question: What is the SwiGLU activation function and why is it preferred over ReLU or GELU?
+Answer: SwiGLU (Swish Gated Linear Unit) is defined as: SwiGLU(x) = (x * W_1) * Swish(x * W_2), where Swish(z) = z * sigmoid(beta * z). By multiplying a linear projection with an element-wise gated non-linear activation, SwiGLU provides superior gradient propagation and smoother decision boundaries, yielding consistent perplexity improvements in architectures such as LLaMA, Mistral, and PaLM.
+
+Question: How does the AdamW optimizer improve upon standard Adam with L2 regularization?
+Answer: In standard Adam, L2 weight decay is applied by adding lambda * theta to the gradient before computing moving averages. In adaptive gradient algorithms, this causes weights with large historical gradients to receive less weight decay. AdamW decouples weight decay from the gradient moments: theta_{t+1} = theta_t - lr * (m_hat / (sqrt(v_hat) + eps)) - lr * lambda * theta_t. This ensures true scale-invariant weight shrinkage and significantly improves out-of-distribution generalization.
+
+Question: What is Mixed Precision Training (FP16 / BF16) and how does it speed up neural networks?
+Answer: Mixed Precision training stores weights, activations, and gradients in 16-bit floating point formats (FP16 or BFloat16) while maintaining a master copy of model weights in full 32-bit (FP32) precision. BF16 has the same 8-bit dynamic range as FP32, eliminating underflow issues without requiring dynamic loss scaling. Mixed precision doubles matrix multiplication throughput via Tensor Cores and cuts activation memory consumption in half.
+
+Question: How does FlashAttention achieve sub-quadratic memory footprint?
+Answer: Standard attention materializes the full N x N attention matrix in high-bandwidth GPU memory (HBM), resulting in heavy memory read/write latency. FlashAttention tiles the input sequence into blocks that fit within fast on-chip SRAM. It computes the attention softmax incrementally using online softmax normalization, never writing the intermediate N x N score matrix back to HBM. This reduces memory accesses by up to 10x and speeds up attention execution by 2x to 4x.
+
+Question: What is the purpose of Byte Pair Encoding (BPE) tokenization in AI engines?
+Answer: Byte Pair Encoding (BPE) is a subword tokenization algorithm that iteratively merges the most frequently occurring character or byte pairs in a training corpus into new vocabulary tokens. BPE prevents out-of-vocabulary (OOV) errors by decomposing unfamiliar words into recognized subwords or raw byte sequences while compressing frequent terms into single tokens, optimizing sequence length and embedding efficiency.
+
+Question: How does the AI-Model platform handle multi-tier routing across Flash, Pro, and Advance tiers?
+Answer: The router inspects user request parameters, intent classifications, estimated latency SLAs, and hardware constraints. Flash tier targets high-speed real-time responses using lightweight neural topologies. Pro tier provides balanced reasoning with intermediate depth. Advance tier activates full multi-layer architectures with comprehensive multi-modal generative pipelines for complex coding, high-resolution SVG graphics, and 10-minute 60 FPS video synthesis.
+
+Question: What is the role of PostgreSQL in the AI-Model platform?
+Answer: PostgreSQL serves as the persistent ACID storage engine for user profiles, token balances, conversation history, API keys, MFS billing records, model training benchmarks, and dataset metadata. It utilizes JSONB columns for flexible modality parameters and B-Tree indexes for fast transaction lookups.
+
+Question: How do SysV Shared Memory and postmaster.pid coordinate PostgreSQL processes?
+Answer: PostgreSQL creates a System V shared memory segment (identified by an IPC key such as 190559) to hold shared buffer pools, lock tables, and WAL buffers across backend processes. The postmaster.pid file records the parent process ID, port, data directory, and shared memory identifier. If the postmaster terminates abnormally, the IPC block and lock file can become orphaned, requiring explicit cleanup before restarting the daemon.
+
+Question: How does FastAPI complement Django in the AI-Model architecture?
+Answer: Django provides robust administrative capabilities, ORM persistence, authentication, and billing management. FastAPI runs as a lightweight, asynchronous ASGI service on port 8001 dedicated to high-concurrency neural inference, model health telemetry, and streaming token delivery.
+
+Question: What is PostGraphile and how is it integrated into the platform?
+Answer: PostGraphile inspects the PostgreSQL schema and automatically generates an efficient, performant GraphQL API on port 5000 with built-in connection pooling, filtering, and subscription support, enabling rapid data querying without manual endpoint boilerplate.
+
+Question: How are animated videos synthesized in the ai_engine without heavy 3D rendering engines?
+Answer: The video engine combines NumPy vectorization, PyTorch/TensorFlow mathematical tensors, and FFmpeg. Mathematical fields (such as plasma interference, Perlin noise, cyber grids, or cellular automata) are rendered into raw RGB24 frame buffers in parallel, piped directly into an FFmpeg H.264 pipe, and encoded into MP4 format with YUV420p pixel format for universal web browser compatibility.
+
+Question: How does the Vite React frontend communicate with the backend services?
+Answer: The React frontend uses TypeScript interfaces, TanStack Query, and Axios/Fetch clients. It communicates with Django on port 8000 for user management, billing, and profile updates, FastAPI on port 8001 for real-time model queries and inference streaming, and Vite dev server on port 5173 with proxy configuration for local development.
+
+Question: What is the workflow for MFS (Mobile Financial Services) payment verification in the platform?
+Answer: When a user initiates a deposit or invoice settlement via bKash, Nagad, or Rocket, an MFS request is recorded with transaction ID (TrxID), sender number, payment method, and amount. The admin verifies the transaction against the mobile financial ledger, marks the invoice as paid, and the system automatically increments the user's token balance.
+
+Question: How does the streaming text dataset loader handle 1GB or larger files without high RAM consumption?
+Answer: The `load_txt_dataset` function opens the file stream using Python's file descriptor generator, iterating line by line without invoking `read()` or `readlines()`. It accumulates conversational Q&A blocks or sliding paragraph windows and yields or loads structured `TrainingSample` instances up to a specified maximum sample limit, preserving low constant memory overhead.

@@ -1,0 +1,27 @@
+# Python / Poetry
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+dist/
+build/
+
+# Django & Local Runtime
+*.sqlite3
+staticfiles/
+src/ai_engine/media/
+src/ai_engine/checkpoints/
+src/base/.run/
+src/base/.logs/
+src/base/.pgdata/
+
+# Frontend / Node
+src/frontend/node_modules/
+src/frontend/dist/
+src/base/postgraphql/node_modules/
+*.tsbuildinfo
+
+# Environment overrides
+*.env.local
+
